@@ -16,18 +16,20 @@ class User  extends Model
 
         if (!isset($_SESSION)) { session_start(); }
 
-        if (!$this->load($_SESSION['id']))
+        if (!$this->load())
         {
             $this->id = null;
         }
     }
 
-    private function load($id)
+    private function load()
     {
         $validador = false;
 
         if(isset($_SESSION['id']))
         {
+            $id=$_SESSION['id'];
+
             $sql = 'SELECT * FROM usuario u ';
             $sql .= 'where u.id = ?';
             $query = $this->db->prepare($sql);
