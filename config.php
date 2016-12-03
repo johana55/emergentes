@@ -18,3 +18,6 @@ $config->set('dbport','5432');
 $config->set('dbuser', 'grupo03');
 $config->set('dbpass', 'grupo03grupo03');
 
+// datos de aplicacion
+$config->set('urlBase',"http://localhost/emergentes/index.php");
+
