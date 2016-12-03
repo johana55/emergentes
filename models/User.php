@@ -60,6 +60,16 @@ class User  extends Model
     {
         return !isset($this->id);
     }
+    public function modulos()
+    {
+        $sql = 'SELECT  m.descripcion  as modulos
+            FROM cuaccion cu,casouso c,modulo m, permiso p, rol r, usuario u
+            where m.id=c.modulo and p.cu=c.id and p.cu=cu.cu and p.accion=cu.accion and p.rol=r.id and u.id_rol=r.id and u.id=?
+            group by modulos';
+        $query = $this->db->prepare($sql);
+        $query->execute([$this->id]);
+        return $query->fetchAll(PDO::FETCH_OBJ);
+    }
 
     public function rol()
     {
@@ -70,13 +80,16 @@ class User  extends Model
         $query->execute([$this->id]);
         if($result = $query->fetch(PDO::FETCH_OBJ))
         {
-            return $result->nombre;
+          return $result->nombre;
         }else
         {
             return 'SIN ROL';
         }
     }
 
+    public function goHome(){
+
+    }
     public function login( $username, $password)
     {
         $sql = 'select * from usuario  where ';
