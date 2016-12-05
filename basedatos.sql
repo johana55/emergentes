@@ -238,4 +238,16 @@ INSERT into modulo VALUES (1,'PEDIDOS');//PARA LA PIMERA VERSION TODOS LOS CU ES
   INSERT into modulo VALUES (3,'CATALOGO');
   UPDATE casouso set modulo=1
 
+INSERT  into unidad_medida VALUES (2,'caja8','caja de 8 unidades');
+INSERT  into unidad_medida VALUES (3,'caja12','caja de 12 unidades');
+INSERT  into unidad_medida VALUES (4,'pack','packete');
 
+INSERT INTO marca VALUES (2,'HITACHY');
+INSERT INTO marca VALUES (3,'SONY');
+INSERT INTO marca VALUES (4,'SANGSUN');
+
+INSERT INTO categoria VALUES (2,'AUDIFONO');
+INSERT INTO categoria VALUES (3,'CELULAR');
+
+INSERT INTO imagen VALUES (1,'1-1.png',1);
+INSERT INTO imagen VALUES (2,'1-2.png',1);

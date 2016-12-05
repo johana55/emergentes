@@ -20,4 +20,5 @@ $config->set('dbpass', 'grupo03grupo03');
 
 // datos de aplicacion
 $config->set('urlBase',"http://localhost/emergentes/index.php");
-
+$config->set('productos','images/productos/');
+$config->set('maxImagesProductos',3);

@@ -21,7 +21,7 @@ class SiteController extends Controller
 
             if( $user->login($_POST['username'],$_POST['password']))
             {
-                header('Location: index.php?controller=Pedido&action=inicio');
+                header('Location: inicio.php?controller=Pedido&action=inicio');
             }
         }else {
 
@@ -32,6 +32,6 @@ class SiteController extends Controller
     {
         $user = User::singleton();
         $user::logout();
-        header('Location: index.php?controller=Site&action=inicio');
+        header('Location: inicio.php?controller=Site&action=inicio');
     }
 }

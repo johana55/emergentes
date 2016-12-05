@@ -2,7 +2,7 @@
 
 class PedidoController extends Controller
 {
-    public function inicioAction()
+    public function indexAction()
     {
 
         $this->view->show('pedido/inicio',[]);

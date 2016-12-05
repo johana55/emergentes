@@ -1,8 +1,9 @@
+<?php
+include 'views/layout/head.php';
+?>
 
 
-
-
-<h2>Productos</h2>
+    <h2>Productos</h2>
 <a href="<?= $config->get('urlBase').'?controller=Producto&action=create' ?>">Registrar Nuevo Producto</a>
 <table class="table table-bordered">
     <thead>
@@ -28,8 +29,19 @@
             <td><?= $producto->unidad_medida()->abreviatura?></td>
             <td><?=$producto->marca()->descripcion ?></td>
             <td><?=$producto->categoria()->descripcion ?></td>
+            <td><a href="<?= $config->get('urlBase').'?controller=Producto&action=editar&id='.$producto->id?>">
+                    editar
+                </a></td>
+            <td><a href="<?= $config->get('urlBase').'?controller=Producto&action=imagen&id='.$producto->id?>">
+                    imag
+                </a></td>
+
 
         </tr>
     <?php } ?>
     </tbody>
 </table>
+
+<?php
+include 'views/layout/foot.php';
+?>

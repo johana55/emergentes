@@ -49,7 +49,7 @@ if( $auth->isGuest() )
                     case 'PedidoController':
 
                         // registrar acciones
-                        $acciones = ['inicioAction',];
+                        $acciones = ['indexAction',];
 
                         if(!in_array($actionName,$acciones))
                         {
@@ -64,7 +64,19 @@ if( $auth->isGuest() )
                     case 'ProductoController':
 
                         // registrar acciones
-                        $acciones = ['indexAction','createAction','storeAction'];
+                        $acciones = ['indexAction','createAction','editarAction','imagenAction','eliminarImagenAction'];
+
+                        if(!in_array($actionName,$acciones))
+                        {
+                            // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
+                            $controllerName = '';
+                            $actionName = '';
+                        }
+                        break;
+                    case 'ImagenController':
+
+                        // registrar acciones
+                        $acciones = ['indexAction',];
 
                         if(!in_array($actionName,$acciones))
                         {

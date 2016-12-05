@@ -2,6 +2,7 @@
 require 'models/UnidadMedida.php';
 require 'models/Marca.php';
 require 'models/Categoria.php';
+
 class Producto extends Model
 {
     public $id;
@@ -14,7 +15,6 @@ class Producto extends Model
 
     const table='producto';
 
-
     public function listar()
     {
         $sql = 'SELECT * FROM '.self::table;
@@ -23,7 +23,6 @@ class Producto extends Model
 
         return $query->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Producto');
     }
-
     public function unidad_medida()
     {
         $sql = 'SELECT * FROM '.'unidad_medida ';
@@ -52,6 +51,16 @@ class Producto extends Model
         $query = $this->db->prepare($sql);
         $query->execute($params);
         $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Categoria');
+        return $query->fetch();
+    }
+    public function editar()
+    {
+        $sql = 'SELECT * FROM '.self::table;
+        $sql.=' where id= ?';
+        $params = [$this->id];
+        $query = $this->db->prepare($sql);
+        $query->execute($params);
+        $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Producto');
         return $query->fetch();
     }
 }
