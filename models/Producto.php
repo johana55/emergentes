@@ -14,7 +14,6 @@ class Producto extends Model
     public $categoria;
 
     const table='producto';
-
     public function listar()
     {
         $sql = 'SELECT * FROM '.self::table;
@@ -63,4 +62,6 @@ class Producto extends Model
         $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Producto');
         return $query->fetch();
     }
+
+
 }

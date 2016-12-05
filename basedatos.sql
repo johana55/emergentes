@@ -249,5 +249,40 @@ INSERT INTO marca VALUES (4,'SANGSUN');
 INSERT INTO categoria VALUES (2,'AUDIFONO');
 INSERT INTO categoria VALUES (3,'CELULAR');
 
-INSERT INTO imagen VALUES (1,'1-1.png',1);
-INSERT INTO imagen VALUES (2,'1-2.png',1);
+
+CREATE TABLE catalogo (
+  id serial NOT NULL,
+  descripcion char(50),
+  fechaInicio char(20),
+  fechaFin char(20)
+)
+;
+CREATE TABLE producto_catalogo (
+  id serial NOT NULL,
+  producto integer NOT NULL,
+  catalogo integer NOT NULL,
+  precio decimal(10,2) NOT NULL,
+  stock integer,
+show boolean
+)
+;
+
+ALTER TABLE catalogo ADD CONSTRAINT PK_catalogo
+PRIMARY KEY (id)
+;
+ALTER TABLE producto_catalogo ADD CONSTRAINT PK_producto_catalogo
+PRIMARY KEY (id)
+;
+ALTER TABLE producto_catalogo ADD CONSTRAINT FK_producto_catalogo_catalogo
+FOREIGN KEY (catalogo) REFERENCES catalogo (id)
+;
+
+ALTER TABLE producto_catalogo ADD CONSTRAINT FK_producto_catalogo_producto
+FOREIGN KEY (producto) REFERENCES producto (id)
+;
+alter table catalogo add COLUMN nombre char(50) UNIQUE
+alter table catalogo add COLUMN show BOOLEAN
+
+INSERT INTO producto_catalogo VALUES (1,1,3,35,100,true);
+
+insert into producto VALUES (2,'FLASH-8-SANGSUN','8 GB MODELO 22344',30,1,1,1);

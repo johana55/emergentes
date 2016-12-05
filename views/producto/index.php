@@ -2,7 +2,6 @@
 include 'views/layout/head.php';
 ?>
 
-
     <h2>Productos</h2>
 <a href="<?= $config->get('urlBase').'?controller=Producto&action=create' ?>">Registrar Nuevo Producto</a>
 <table class="table table-bordered">

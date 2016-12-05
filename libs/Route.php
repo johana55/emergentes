@@ -85,6 +85,18 @@ if( $auth->isGuest() )
                             $actionName = '';
                         }
                         break;
+                    case 'CatalogoController':
+
+                        // registrar acciones
+                        $acciones = ['indexAction','crearAction','editarAction','productosAction','eliminarProductoAction','addProductoAction'];
+
+                        if(!in_array($actionName,$acciones))
+                        {
+                            // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
+                            $controllerName = '';
+                            $actionName = '';
+                        }
+                        break;
                     default :
                         // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
                         $controllerName = '';

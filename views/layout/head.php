@@ -49,7 +49,7 @@
             <li class="w3-padding-16"><a href="<?= $config->get('urlBase').'?controller=Producto&action=index'?>">Productos</a></li>
             <li class="w3-padding-16"><a href="#">Clientes</a></li>
             <li class="w3-padding-16"><a href="<?= $config->get('urlBase').'?controller=Imagen&action=index'?>">Imagenes</a></li>
-
+            <li class="w3-padding-16"><a href="<?= $config->get('urlBase').'?controller=Catalogo&action=index'?>">Catalogos</a></li>
         </ul>
     </div>
 <!--modulo de config-->
