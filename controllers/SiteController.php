@@ -3,7 +3,7 @@
 
 class SiteController extends Controller
 {
-    public function inicioAction()
+    public function indexAction()
     {
         $mensaje = 'Mensaje enviado desde el controlador';
         $parametros = ['mensaje' => $mensaje,'usuario' =>  User::singleton(),'modulos'=> User::singleton()->modulos()];
@@ -21,7 +21,7 @@ class SiteController extends Controller
 
             if( $user->login($_POST['username'],$_POST['password']))
             {
-                header('Location: inicio.php?controller=Pedido&action=inicio');
+                header('Location: index.php?controller=Pedido&action=index');
             }
         }else {
 
@@ -32,6 +32,6 @@ class SiteController extends Controller
     {
         $user = User::singleton();
         $user::logout();
-        header('Location: inicio.php?controller=Site&action=inicio');
+        header('Location: inicio.php?controller=Site&action=index');
     }
 }

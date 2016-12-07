@@ -65,6 +65,24 @@ class CatalogoController extends Controller
     //el parametro q son las bsquedas con las que se muestran los productos del catalogo
     public function productosAction()
     {
+
+        if (!empty($_POST['addProducto'])) {
+
+            if (is_array($_POST['producto'])) {
+
+                $cantidad = count($_POST['producto']);
+                $productos = $_POST['producto'];
+                $catalogo=$_POST['catalogo'];
+
+                $productoC=new ProductoC();
+                $productoC->catalogo=$catalogo;
+                foreach ($productos as $p) {
+                    $productoC->producto=$p;
+                    $productoC->insertar();
+                }
+                header('Location: index.php?controller=Catalogo&action=productos&id='.$catalogo.'&q=');
+            }
+        }
         if(!empty($_GET['id']))
         {
             $q=$_GET['q'];
@@ -72,38 +90,46 @@ class CatalogoController extends Controller
             $producto->catalogo=$_GET['id'];
             $productos=$producto->listar($q);
 
-
             $otrosProductos=$producto->listarOtros();
             return $this->view->show('catalogo/productos',[
                 'productos' => $productos,
                 'otrosProductos'=>$otrosProductos,
+                'catalogo'=>$producto->catalogo,
             ]);
         }
     }
     public function eliminarProductoAction()
     {
         //este es el id de la tabla producto-catalogo
-        if(!empty($_GET['id']))
+        if(!empty($_GET['producto']) and !empty($_GET['catalogo']))
         {
             $producto=new ProductoC();
-            $producto->id=$_GET['id'];
-            $catalogo=$_GET['catalogo'];
+            $producto->producto=$_GET['producto'];
+            $producto->catalogo=$_GET['catalogo'];
+
             if($producto->eliminar())
-                header('Location: index.php?controller=Catalogo&action=productos&id='.$catalogo.'&q=');
+                header('Location: index.php?controller=Catalogo&action=productos&id='.$producto->catalogo.'&q=');
+
         }
     }
-    public function addProducto()
+    public function addProductosAction()
     {
         if (!empty($_POST['addProducto'])) {
+
             if (is_array($_POST['producto'])) {
 
                 $cantidad = count($_POST['producto']);
                 $productos = $_POST['producto'];
-                foreach ($productos as $p) {
+                $catalogo=$_POST['catalogo'];
 
+                $productoC=new ProductoC();
+                $productoC->catalogo=$catalogo;
+                foreach ($productos as $p) {
+                    $productoC->producto=$p;
+                    $productoC->insertar();
                 }
+                header('Location: index.php?controller=Catalogo&action=productos');
             }
         }
     }
-
 }

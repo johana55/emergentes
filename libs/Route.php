@@ -8,7 +8,7 @@ if( $auth->isGuest() )
     {
         case 'SiteController':
             // registrar acciones
-            $acciones = ['inicioAction','loginAction','logoutAction'];
+            $acciones = ['indexAction','loginAction','logoutAction'];
             if(!in_array($actionName,$acciones))
             {
                 // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
@@ -37,7 +37,7 @@ if( $auth->isGuest() )
                     case 'SiteController':
 
                         // registrar acciones
-                        $acciones = ['inicioAction','loginAction','logoutAction',];
+                        $acciones = ['indexAction','loginAction','logoutAction',];
 
                         if(!in_array($actionName,$acciones))
                         {
@@ -58,9 +58,6 @@ if( $auth->isGuest() )
                             $actionName = '';
                         }
                         break;
-
-                    // registrar mas rutas
-
                     case 'ProductoController':
 
                         // registrar acciones
@@ -88,7 +85,20 @@ if( $auth->isGuest() )
                     case 'CatalogoController':
 
                         // registrar acciones
-                        $acciones = ['indexAction','crearAction','editarAction','productosAction','eliminarProductoAction','addProductoAction'];
+                        $acciones = ['indexAction','crearAction','editarAction','productosAction',
+                            'eliminarProductoAction','addProductosAction'];
+
+                        if(!in_array($actionName,$acciones))
+                        {
+                            // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
+                            $controllerName = '';
+                            $actionName = '';
+                        }
+                        break;
+                    case 'UsuarioController':
+
+                        // registrar acciones
+                        $acciones = ['indexAction','crearAction','editarAction',];
 
                         if(!in_array($actionName,$acciones))
                         {

@@ -4,12 +4,13 @@ class ProductoC extends Model
 {
     public $id;
     public $nombre;
-    public $marca;
     public $precio;
     public $stock;
     public $catalogo;
     public $show;
     public $producto;
+
+    const table='producto_catalogo';
     public function listar($q)
     {
         $sql = 'SELECT pc.id,p.id as producto,p.nombre,p.marca,pc.precio,pc.stock,pc.show,c.id as catalogo
@@ -31,9 +32,9 @@ class ProductoC extends Model
     }
     public function eliminar()
     {
-        $sql = 'DELETE FROM producto_catalogo where id='.$this->id;
+        $sql = 'DELETE FROM '.self::table.' where producto='.$this->producto.' and catalogo='.$this->catalogo;
         $query = $this->db->prepare($sql);
-        $query->execute();
+        return $query->execute();
     }
     public function listarOtros()
     {
@@ -45,5 +46,13 @@ class ProductoC extends Model
         $query->execute();
         return $query->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Producto');
     }
-
+    public function insertar()
+    {
+        $sql = 'INSERT INTO '.self::table;
+        $sql .= ' (producto,catalogo,precio,stock,show)';
+        $sql .= ' VALUES(?,?,?,?,?)';
+        $params = [$this->producto,$this->catalogo,0,0,0];
+        $query = $this->db->prepare($sql);
+        $query->execute($params);
+    }
 }

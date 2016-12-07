@@ -17,24 +17,25 @@ ALTER TABLE usuario
 ALTER TABLE usuario ADD CONSTRAINT PK_usuario
 	PRIMARY KEY (id)
 ;
-ALTER TABLE usuario ADD CONSTRAINT FK_usuario_rol
-	FOREIGN KEY (id_rol) REFERENCES rol (id)
-;
+
 
 CREATE TABLE rol (
 	id serial NOT NULL,
 	nombre varchar(100) NOT NULL
 )
 ;
-
 ALTER TABLE rol
 	ADD CONSTRAINT UQ_rol_nombre UNIQUE (nombre)
 ;
 ALTER TABLE rol ADD CONSTRAINT PK_rol
 	PRIMARY KEY (id)
 ;
+ALTER TABLE usuario ADD CONSTRAINT FK_usuario_rol
+	FOREIGN KEY (id_rol) REFERENCES rol (id)
+;
+insert into usuario VALUES (1,'johana','123',1,'jz89@hotmail.com',1);
+insert into usuario VALUES (2,'german','123',1,'yhermany@live.com',1);
 
-//3/15/2016
 CREATE TABLE categoria (
   id serial NOT NULL,
   descripcion char(30) NOT NULL
@@ -187,9 +188,8 @@ FOREIGN KEY (cu, accion) REFERENCES cuaccion (cu, accion)
 ALTER TABLE permiso ADD CONSTRAINT FK_permiso_rol
 FOREIGN KEY (rol) REFERENCES rol (id)
 ;
-
-//poblacion
-insert INTO  rol VALUES (2,'empleado');
+insert INTO  rol VALUES (1,'ADMINISTRADOR');
+insert INTO  rol VALUES (2,'EMPLEADO');
 
 insert INTO  casouso VALUES (1,'pedido');
 insert INTO  casouso VALUES (2,'catalogo');
@@ -283,6 +283,100 @@ FOREIGN KEY (producto) REFERENCES producto (id)
 alter table catalogo add COLUMN nombre char(50) UNIQUE
 alter table catalogo add COLUMN show BOOLEAN
 
-INSERT INTO producto_catalogo VALUES (1,1,3,35,100,true);
 
-insert into producto VALUES (2,'FLASH-8-SANGSUN','8 GB MODELO 22344',30,1,1,1);
+CREATE TABLE prospecto (
+  id integer NOT NULL,
+  nombres char(50),
+  apellidos char(50),
+  correo char(50),
+  direccion char(60),
+  telefono char(8),
+  nit char(15),
+  ciudad integer
+)
+;
+CREATE TABLE cliente (
+  id integer NOT NULL,
+  fechacreado char(16) NOT NULL,
+  prospecto integer
+)
+;
+
+CREATE TABLE empleado (
+  id integer NOT NULL,
+  domicilio char(100)
+)
+;
+ALTER TABLE cliente ADD CONSTRAINT PK_cliente
+PRIMARY KEY (id)
+;
+
+
+ALTER TABLE empleado ADD CONSTRAINT PK_empleado
+PRIMARY KEY (id)
+;
+
+
+ALTER TABLE prospecto ADD CONSTRAINT PK_prospecto
+PRIMARY KEY (id)
+;
+
+
+
+
+ALTER TABLE cliente ADD CONSTRAINT FK_cliente_prospecto
+FOREIGN KEY (prospecto) REFERENCES prospecto (id)
+;
+
+ALTER TABLE cliente ADD CONSTRAINT FK_cliente_usuario
+FOREIGN KEY (id) REFERENCES usuario (id)
+;
+
+ALTER TABLE empleado ADD CONSTRAINT FK_empleado_usuario
+FOREIGN KEY (id) REFERENCES usuario (id)
+;
+CREATE TABLE ciudad (
+  id integer NOT NULL,
+  nombre char(20),
+  depto integer
+)
+;
+
+CREATE TABLE departamento (
+  id integer NOT NULL,
+  nombre char(20),
+  pais integer
+)
+;
+
+CREATE TABLE pais (
+  id integer NOT NULL,
+  nombre char(30)
+)
+;
+ALTER TABLE ciudad ADD CONSTRAINT PK_ciudad
+PRIMARY KEY (id)
+;
+ALTER TABLE departamento ADD CONSTRAINT PK_departamento
+PRIMARY KEY (id)
+;
+ALTER TABLE pais ADD CONSTRAINT PK_pais
+PRIMARY KEY (id)
+;
+
+ALTER TABLE ciudad ADD CONSTRAINT FK_ciudad_departamento
+FOREIGN KEY (depto) REFERENCES departamento (id)
+;
+
+ALTER TABLE departamento ADD CONSTRAINT FK_departamento_pais
+FOREIGN KEY (pais) REFERENCES pais (id)
+;
+ALTER TABLE prospecto ADD CONSTRAINT FK_prospecto_ciudad
+FOREIGN KEY (ciudad) REFERENCES ciudad (id)
+;
+INSERT INTO pais VALUES (1,'BOLIVIA');
+INSERT INTO departamento VALUES (1,'SANTA CRUZ',1);
+INSERT INTO departamento VALUES (2,'LA PAZ',1);
+INSERT INTO ciudad VALUES (1,'Andrez Ibañes',1);
+INSERT INTO ciudad VALUES (2,'Cotoca',1);
+

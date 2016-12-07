@@ -56,7 +56,7 @@
     <div id="nav03">
 
         <ul class="w3-ul w3-large">
-            <li class="w3-padding-16"><a href="#">Pagina 1</a></li>
+            <li class="w3-padding-16"><a href="<?= $config->get('urlBase').'?controller=Usuario&action=index'?>">Usuarios</a></li>
             <li class="w3-padding-16"><a href="#">Pagina 2</a></li>
         </ul>
     </div>

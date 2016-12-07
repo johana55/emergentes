@@ -77,7 +77,6 @@ class ProductoController extends Controller
             ]);
         }
     }
-
     public function eliminarImagenAction()
     {
         if(!empty($_GET['imagen']) && !empty($_GET['producto'])){

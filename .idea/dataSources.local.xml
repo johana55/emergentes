@@ -10,5 +10,14 @@
       <user-name>grupo03</user-name>
       <resolve-scope>db_grupo03:grupo03,public</resolve-scope>
     </data-source>
+    <data-source name="PostgreSQL - db_grupo03@localhost" uuid="c2d5ae96-7c6f-49f5-8d64-6e85a3fdf045">
+      <database-info product="PostgreSQL" version="9.6.1" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <resolve-scope>db_grupo03:public,postgres</resolve-scope>
+    </data-source>
   </component>
 </project>
