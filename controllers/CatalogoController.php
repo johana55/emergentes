@@ -5,12 +5,10 @@ require 'models/ProductoC.php';
 
 class CatalogoController extends Controller
 {
-
     public function indexAction()
     {
         $model = new Catalogo();
         $catalogos = $model->listar();
-
         return $this->view->show('catalogo/index',['catalogos' => $catalogos]);
     }
     public function editarAction()
@@ -39,6 +37,7 @@ class CatalogoController extends Controller
     }
     public function crearAction()
     {
+        $mensaje='';
         if(!empty($_POST))
         {
             $catalogo=new Catalogo();
@@ -47,8 +46,9 @@ class CatalogoController extends Controller
             $catalogo->fechainicio=$_POST['inicio'];
             $catalogo->fechafin=$_POST['fin'];
             $catalogo->show=$_POST['show'];
-            if($catalogo->crear())
+           $catalogo->crear();
                 header('Location: index.php?controller=Catalogo&action=index');
+
         }
         return $this->view->show('catalogo/crear',[]);
     }

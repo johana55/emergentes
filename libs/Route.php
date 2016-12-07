@@ -1,6 +1,7 @@
 <?php
 require 'models/User.php';
 $auth = User::singleton();
+
 if( $auth->isGuest() )
 {
     // registrar rutas de acceso de los invitados
@@ -8,7 +9,7 @@ if( $auth->isGuest() )
     {
         case 'SiteController':
             // registrar acciones
-            $acciones = ['indexAction','loginAction','logoutAction'];
+            $acciones = ['loginAction',];
             if(!in_array($actionName,$acciones))
             {
                 // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
@@ -31,19 +32,25 @@ if( $auth->isGuest() )
     switch ($auth->rol())
     {
         case 'ADMINISTRADOR':
+
             // registrar rutas de acceso al admin
                 switch ($controllerName)
                 {
                     case 'SiteController':
 
                         // registrar acciones
-                        $acciones = ['indexAction','loginAction','logoutAction',];
+                        $acciones = ['indexAction','logoutAction',];
 
                         if(!in_array($actionName,$acciones))
                         {
                             // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
+                           if($actionName=='loginAction')
+                           {
+                               $actionName='indexAction';
+                           }else{
                             $controllerName = '';
                             $actionName = '';
+                           }
                         }
                         break;
                     case 'PedidoController':
@@ -95,10 +102,10 @@ if( $auth->isGuest() )
                             $actionName = '';
                         }
                         break;
-                    case 'UsuarioController':
+                    case 'EmpleadoController':
 
                         // registrar acciones
-                        $acciones = ['indexAction','crearAction','editarAction',];
+                        $acciones = ['indexAction','createAction','editarAction',];
 
                         if(!in_array($actionName,$acciones))
                         {

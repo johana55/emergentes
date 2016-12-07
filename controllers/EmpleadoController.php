@@ -15,7 +15,7 @@ class EmpleadoController extends Controller
 
     public function createAction()
    {
-       if(!empty($_POST['empleado']))
+       if(!empty($_POST))
        {
            $usuario = new Usuario();
            $usuario->nombre_usuario = $_POST['nombre_usuario'];
@@ -25,22 +25,22 @@ class EmpleadoController extends Controller
 
            $usuario->tipo =1;
            $id_usuario = $usuario->crear();
-
            if(!is_null($id_usuario))
            {
                $empleado= new Empleado();
-               $empleado->id=$_POST['id'];
+               $empleado->id=$id_usuario;
                $empleado->domicilio=$_POST['domicilio'];
                if($empleado->crear())
                {
                    header('Location: index.php?controller=Empleado&action=index');
                }
+
            }
 
        }
        $rol= new Rol();
        $roles=$rol->listar();
-       return $this->view->show( 'empleado/crear',['roles'=>$roles]);
+       return $this->view->show( 'empleado/create',['roles'=>$roles]);
    }
 
 }

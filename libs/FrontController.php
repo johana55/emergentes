@@ -40,7 +40,7 @@ class FrontController
         if (!empty($_GET['action']))
             $actionName = $_GET['action'] . 'Action';
         else
-            $actionName = 'indexAction';
+            $actionName = 'loginAction';
 
 
         // Incluimos el manejador de rutas

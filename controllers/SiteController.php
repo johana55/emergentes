@@ -6,7 +6,7 @@ class SiteController extends Controller
     public function indexAction()
     {
         $mensaje = 'Mensaje enviado desde el controlador';
-        $parametros = ['mensaje' => $mensaje,'usuario' =>  User::singleton(),'modulos'=> User::singleton()->modulos()];
+        $parametros = ['mensaje' => $mensaje,];
 
         // mostramos la vista
         $this->view->show('site/inicio', $parametros);
@@ -21,7 +21,7 @@ class SiteController extends Controller
 
             if( $user->login($_POST['username'],$_POST['password']))
             {
-                header('Location: index.php?controller=Pedido&action=index');
+                header('Location: index.php?controller=Site&action=index');
             }
         }else {
 

@@ -14,8 +14,8 @@
     <schema id="4" parent="1" name="public">
       <object-id>2200</object-id>
       <visible>1</visible>
-      <introspection-state-number>784</introspection-state-number>
-      <introspection-timestamp>2016-12-06.10:30:14.435</introspection-timestamp>
+      <introspection-state-number>797</introspection-state-number>
+      <introspection-timestamp>2016-12-07.11:53:47.707</introspection-timestamp>
     </schema>
     <schema id="5" parent="1" name="pg_catalog">
       <object-id>11</object-id>
@@ -78,7 +78,7 @@
     </table>
     <table id="21" parent="4" name="catalogo">
       <object-id>16729</object-id>
-      <state-number>736</state-number>
+      <state-number>797</state-number>
     </table>
     <table id="22" parent="4" name="categoria">
       <object-id>16609</object-id>
@@ -241,8 +241,8 @@
       <data-type>char(50)|0</data-type>
     </column>
     <column id="57" parent="21" name="show">
-      <state-number>736</state-number>
-      <data-type>boolean|0</data-type>
+      <state-number>797</state-number>
+      <data-type>integer|0</data-type>
     </column>
     <index id="58" parent="21" name="pk_catalogo">
       <object-id>16739</object-id>

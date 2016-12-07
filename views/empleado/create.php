@@ -1,6 +1,7 @@
-
-
-<form class="form-horizontal" action="<?= $config->get('urlBase').'?controller=Producto&action=store'?>" method="post">
+<?php
+include 'views/layout/head.php';
+?>
+<form class="form-horizontal" action="" method="post">
 
 
     <div class="form-group">
@@ -18,7 +19,7 @@
     <div class="form-group">
         <label for="email" class="col-sm-2 control-label">Email</label>
         <div class="col-sm-10">
-            <input type="text" required class="form-control" name="email" placeholder="nombre@domicio.com">
+            <input type="email" required class="form-control" name="email" placeholder="nombre@domicio.com">
         </div>
     </div>
     <div class="form-group">
@@ -28,7 +29,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="rol" class="col-sm-2 control-label">Selecciones el rol del usuario:</label>
+        <label for="rol" class="col-sm-2 control-label">Rol:</label>
         <div class="col-sm-10">
             <select name="rol"class="btn btn-block dropdown-toggle" >
                 <?php foreach ($roles as $c): ?>
@@ -39,7 +40,10 @@
     </div>
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Guardar</button>
+            <button type="submit" class="btn btn-default" >Guardar</button>
         </div>
     </div>
     </form>
+<?php
+include 'views/layout/foot.php';
+?>

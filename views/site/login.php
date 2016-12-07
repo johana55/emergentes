@@ -1,32 +1,66 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
- <!--   <link rel="icon" href="../../favicon.ico"> -->
+       <title>Venta Online</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #eee;
+    }
 
-    <title>Entrar al sistema</title>
-
+    .form-signin {
+        max-width: 330px;
+        padding: 15px;
+        margin: 0 auto;
+    }
+    .form-signin .form-signin-heading,
+    .form-signin .checkbox {
+        margin-bottom: 10px;
+    }
+    .form-signin .checkbox {
+        font-weight: normal;
+    }
+    .form-signin .form-control {
+        position: relative;
+        height: auto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .form-signin .form-control:focus {
+        z-index: 2;
+    }
+    .form-signin input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .form-signin input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
-    <form action="" method="post">
-        <label for="usuario" class="sr-only">Usuario</label>
-        <input type="text" name="username" id="usuario" class="form-control" placeholder="Nombre de Usuario" required autofocus>
+    <form class="form-signin" action="" method="post">
+        <h3 class="form-signin-heading">Necesita autorizacion para ingresar.</h3>
+        <label for="username" class="sr-only">Email address</label>
+        <input type="text" name="username" class="form-control" placeholder="nombre de usuario" required autofocus>
         <label for="password" class="sr-only">Password</label>
-        <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
-
-        <button type="submit">Entrar</button>
+        <input type="password" name="password" class="form-control" placeholder="contraseña" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
     </form>
-
-</div>
-
-
 </body>
 </html>

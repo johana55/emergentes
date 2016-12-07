@@ -17,7 +17,7 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <resolve-scope>db_grupo03:public,postgres</resolve-scope>
+      <resolve-scope>db_grupo03:postgres,public</resolve-scope>
     </data-source>
   </component>
 </project>

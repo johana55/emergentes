@@ -27,5 +27,3 @@ $config->set('dbpass', 'root');
 // datos de aplicacion
 $config->set('urlBase',"http://localhost/emergentes/index.php");
 $config->set('productos','images/productos/');
-$config->set('maxImagesProductos',3);
-

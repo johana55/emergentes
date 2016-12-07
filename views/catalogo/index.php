@@ -16,8 +16,6 @@ include 'views/layout/head.php';
         </tr>
         </thead>
         <tbody>
-
-
         <?php foreach ($catalogos as $c){ ?>
             <tr>
                 <td><?=$c->id ?></td>

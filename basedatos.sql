@@ -379,4 +379,5 @@ INSERT INTO departamento VALUES (1,'SANTA CRUZ',1);
 INSERT INTO departamento VALUES (2,'LA PAZ',1);
 INSERT INTO ciudad VALUES (1,'Andrez Ibañes',1);
 INSERT INTO ciudad VALUES (2,'Cotoca',1);
-
+ALTER TABLE catalogo drop COLUMN show
+ALTER TABLE catalogo ADd COLUMN  show INTEGER

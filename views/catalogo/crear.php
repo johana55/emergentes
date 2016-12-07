@@ -30,7 +30,7 @@ include 'views/layout/head.php';
         </div>
     </div>
 
-            <input type="hidden"  name="show" value="0" >Show( Mostrar en pág. Web)
+            <input type="hidden"  name="show" value="0" >
 
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
