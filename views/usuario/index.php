@@ -1,5 +1,5 @@
 <?php
-include 'views/layout/head.php';
+include 'views/layout/admin/head.php';
 ?>
 
     <h2>Usuarios</h2>
@@ -85,5 +85,5 @@ include 'views/layout/head.php';
         </div>
     </div>
 <?php
-include 'views/layout/foot.php';
+include 'views/layout/admin/foot.php';
 ?>

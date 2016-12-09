@@ -1,5 +1,5 @@
 <?php
-include 'views/layout/head.php';
+include 'views/layout/admin/head.php';
 ?>
 
     <h2>Productos</h2>
@@ -36,5 +36,5 @@ include 'views/layout/head.php';
     </table>
 
 <?php
-include 'views/layout/foot.php';
+include 'views/layout/admin/foot.php';
 ?>

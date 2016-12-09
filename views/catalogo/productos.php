@@ -1,5 +1,5 @@
 <?php
-include 'views/layout/head.php';
+include 'views/layout/admin/head.php';
 ?>
     <h2>Productos en Catalogo</h2>
     <button onclick="document.getElementById('id01').style.display='block'"
@@ -73,5 +73,5 @@ include 'views/layout/head.php';
         </div>
     </div>
 <?php
-include 'views/layout/foot.php';
+include 'views/layout/admin/foot.php';
 ?>

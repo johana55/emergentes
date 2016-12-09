@@ -1,5 +1,5 @@
 <?php
-include 'views/layout/head.php';
+include 'views/layout/admin/head.php';
 ?>
 <form class="form-horizontal" action="" method="post">
 
@@ -45,5 +45,5 @@ include 'views/layout/head.php';
     </div>
     </form>
 <?php
-include 'views/layout/foot.php';
+include 'views/layout/admin/foot.php';
 ?>

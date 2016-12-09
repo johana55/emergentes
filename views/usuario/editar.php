@@ -1,5 +1,5 @@
 <?php
-include 'views/layout/head.php';
+include 'views/layout/admin/head.php';
 ?>
 
 <h2>Editar</h2>
@@ -44,5 +44,5 @@ include 'views/layout/head.php';
 
 </form>
 <?php
-include 'views/layout/foot.php';
+include 'views/layout/admin/foot.php';
 ?>

@@ -68,7 +68,7 @@ if( $auth->isGuest() )
                     case 'ProductoController':
 
                         // registrar acciones
-                        $acciones = ['indexAction','createAction','editarAction','imagenAction','eliminarImagenAction'];
+                        $acciones = ['indexAction','createAction','storeAction','editarAction','updateAction','imagenAction','eliminarImagenAction'];
 
                         if(!in_array($actionName,$acciones))
                         {

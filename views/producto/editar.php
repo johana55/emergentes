@@ -1,32 +1,32 @@
 <?php
-include 'views/layout/head.php';
+include 'views/layout/admin/head.php';
 ?>
 
 <h2>Editar Producto</h2>
-<form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+<form class="form-horizontal"  action="<?= $config->get('urlBase').'?controller=Producto&action=update&id='.$producto->id?>" method="post" enctype="multipart/form-data">
 
     <div class="form-group">
         <label for="nombre" class="col-sm-2 control-label">Nombre</label>
         <div class="col-sm-10">
-            <input type="text" required class="form-control" name="nombre" placeholder="<?=$producto->nombre ?>">
+            <input type="text" required class="form-control" name="nombre" value="<?=$producto->nombre ?>">
         </div>
     </div>
     <div class="form-group">
         <label for="descripcion" class="col-sm-2 control-label">Descripcion</label>
         <div class="col-sm-10">
-            <input type="text" required class="form-control" name="descripcion" placeholder="<?=$producto->descripcion?>">
+            <input type="text" required class="form-control" name="descripcion" value="<?=$producto->descripcion?>">
         </div>
     </div>
     <div class="form-group">
         <label for="precio_compra" class="col-sm-2 control-label">Precio Compra</label>
         <div class="col-sm-10">
-            <input type="text" required class="form-control" name="precio_compra" placeholder="<?=$producto->precio_compra?>">
+            <input type="text" required class="form-control" name="precio_compra" value="<?=$producto->precio_compra?>">
         </div>
     </div>
    <div class="form-group">
-        <label for="umedida" class="col-sm-2 control-label">Unidad de medida</label>
+        <label for="unidad_media" class="col-sm-2 control-label">Unidad de medida</label>
         <div class="col-sm-10">
-            <select name="umedida"class="btn btn-block dropdown-toggle" >
+            <select name="unidad_medida"class="form-control"  required>
 
                     <?php foreach ($umedidas as $u):
                         if($u->id==$producto->unidad_medida()->id){
@@ -43,7 +43,7 @@ include 'views/layout/head.php';
     <div class="form-group">
         <label for="marca" class="col-sm-2 control-label">Marca</label>
         <div class="col-sm-10">
-                <select name="marca"class="btn btn-block dropdown-toggle" >
+                <select name="marca"class="form-control" required>
 
                     <?php foreach ($marcas as $m):
                         if($m->id==$producto->marca()->id){
@@ -59,7 +59,7 @@ include 'views/layout/head.php';
     <div class="form-group">
         <label for="categoria" class="col-sm-2 control-label">Categoria</label>
         <div class="col-sm-10">
-            <select name="categoria"class="btn btn-block dropdown-toggle" >
+            <select name="categoria"class="form-control"  required>
 
                 <?php foreach ($categorias as $c):
                     if($c->id==$producto->categoria()->id){
@@ -72,15 +72,13 @@ include 'views/layout/head.php';
             </select>
         </div>
     </div>
-    <label for="imagen">Imagen:</label>
-    <input id="imagen" name="imagen" size="30" type="file" />
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Registrar</button>
+            <button type="submit" class="btn btn-warning btn-lg  btn-block">Actualizar</button>
         </div>
     </div>
 
 </form>
 <?php
-include 'views/layout/foot.php';
+include 'views/layout/admin/foot.php';
 ?>

@@ -1,9 +1,9 @@
 <?php
-include 'views/layout/head.php';
+include 'views/layout/admin/head.php';
 ?>
 
     <h2>Productos</h2>
-<a href="<?= $config->get('urlBase').'?controller=Producto&action=create' ?>">Registrar Nuevo Producto</a>
+<a class="btn btn-primary" style="margin-bottom: 10px" href="<?= $config->get('urlBase').'?controller=Producto&action=create' ?>">Registrar Nuevo Producto</a>
 <table class="table table-bordered">
     <thead>
     <tr>
@@ -29,10 +29,10 @@ include 'views/layout/head.php';
             <td><?=$producto->marca()->descripcion ?></td>
             <td><?=$producto->categoria()->descripcion ?></td>
             <td><a href="<?= $config->get('urlBase').'?controller=Producto&action=editar&id='.$producto->id?>">
-                    editar
+                    Editar
                 </a></td>
             <td><a href="<?= $config->get('urlBase').'?controller=Producto&action=imagen&id='.$producto->id?>">
-                    imag
+                    Adm. Imagenes
                 </a></td>
 
 
@@ -42,5 +42,5 @@ include 'views/layout/head.php';
 </table>
 
 <?php
-include 'views/layout/foot.php';
+include 'views/layout/admin/foot.php';
 ?>

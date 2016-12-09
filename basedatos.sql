@@ -59,7 +59,6 @@ CREATE TABLE producto (
   id serial NOT NULL,
   nombre varchar(200) NOT NULL,
   descripcion varchar(250) NOT NULL,
-  precio_venta numeric(10,2) NOT NULL,
   precio_compra numeric(10,2) NOT NULL,
   unidad_medida integer NOT NULL,
   marca integer NOT NULL,

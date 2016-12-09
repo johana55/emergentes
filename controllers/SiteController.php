@@ -32,6 +32,6 @@ class SiteController extends Controller
     {
         $user = User::singleton();
         $user::logout();
-        header('Location: inicio.php?controller=Site&action=index');
+        header('Location: index.php?controller=Site&action=index');
     }
 }

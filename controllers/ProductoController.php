@@ -13,7 +13,13 @@ class ProductoController extends Controller
     }
     public function createAction()
     {
-        return $this->view->show('producto/create');
+        $unidad_medida= new UnidadMedida();
+        $unidad_medida= $unidad_medida->listar();
+        $marca = new Marca();
+        $marca = $marca->listar();
+        $categoria = new Categoria();
+        $categoria = $categoria->listar();
+        return $this->view->show('producto/create',['unidad_medida' => $unidad_medida,'marca' => $marca, 'categoria' => $categoria]);
     }
     public function imagenAction()
     {
@@ -64,17 +70,18 @@ class ProductoController extends Controller
 
             header('Location: index.php?controller=Producto&action=imagen&id='.$producto_id);
         }
-        else
-        if(!empty($_GET['id'])){
-            $model=new Imagen();
-            $producto=$_GET['id'];
-            $model->producto=$producto;
-            $imagenes=$model->buscar();
-            return $this->view->show('producto/imagen',[
-                'imagenes'=>$imagenes,
-                'producto'=>$producto,
-                'mensaje'=>'',
-            ]);
+        else{
+            if(!empty($_GET['id'])){
+                $model=new Imagen();
+                $producto=$_GET['id'];
+                $model->producto=$producto;
+                $imagenes=$model->buscar();
+                return $this->view->show('producto/imagen',[
+                    'imagenes'=>$imagenes,
+                    'producto'=>$producto,
+                    'mensaje'=>'',
+                ]);
+            }
         }
     }
     public function eliminarImagenAction()
@@ -101,9 +108,7 @@ class ProductoController extends Controller
         if(!empty($_GET['id'])) {
             $id=$_GET['id'];
             $model = new Producto();
-            $model->id=$id;
-            $producto = $model->editar();
-
+            $producto = $model->buscar($id);
 
             $modelU=new UnidadMedida();
             $umedidas=$modelU->listar();
@@ -121,6 +126,57 @@ class ProductoController extends Controller
         }
     }
     public function storeAction(){
+
+        if(!empty($_POST['categoria']) && !empty($_POST['nombre']) &&
+            !empty($_POST['descripcion']) && !empty($_POST['precio_compra'])
+            && !empty($_POST['unidad_medida']) && !empty($_POST['marca'] )){
+
+            $model = new Producto();
+            $model ->categoria=$_POST['categoria'];
+            $model->marca=$_POST['marca'];
+            $model->nombre =$_POST['nombre'];
+            $model->descripcion =$_POST['descripcion'];
+            $model->precio_compra =$_POST['precio_compra'];
+            $model->unidad_medida =$_POST['unidad_medida'];
+
+            if($model->save())
+            {
+                header('Location: index.php?controller=Producto&action=index');
+            }
+            else{
+                header('Location: index.php?controller=Producto&action=create');
+            }
+        }else{
+            header('Location: index.php?controller=Producto&action=index');
+        }
+
+    }
+
+    public function updateAction()
+    {
+        if( !empty($_GET['id']) &&!empty($_POST['categoria']) && !empty($_POST['nombre']) &&
+            !empty($_POST['descripcion']) && !empty($_POST['precio_compra'])
+            && !empty($_POST['unidad_medida']) && !empty($_POST['marca'] )){
+            $id= $_GET['id'];
+            $model = new Producto();
+            $model = $model->buscar($id);
+            $model ->categoria=$_POST['categoria'];
+            $model->marca=$_POST['marca'];
+            $model->nombre =$_POST['nombre'];
+            $model->descripcion =$_POST['descripcion'];
+            $model->precio_compra =$_POST['precio_compra'];
+            $model->unidad_medida =$_POST['unidad_medida'];
+
+            if($model->update())
+            {
+                header('Location: index.php?controller=Producto&action=index');
+            }
+            else{
+                header('Location: index.php?controller=Producto&action=editar&id='.$id);
+            }
+        }else{
+            header('Location: index.php?controller=Producto&action=index');
+        }
 
     }
 

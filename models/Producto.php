@@ -14,6 +14,8 @@ class Producto extends Model
     public $categoria;
 
     const table='producto';
+
+
     public function listar()
     {
         $sql = 'SELECT * FROM '.self::table;
@@ -52,8 +54,12 @@ class Producto extends Model
         $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Categoria');
         return $query->fetch();
     }
-    public function editar()
+
+
+
+    public function buscar($id)
     {
+        $this->id=$id;
         $sql = 'SELECT * FROM '.self::table;
         $sql.=' where id= ?';
         $params = [$this->id];
@@ -61,6 +67,41 @@ class Producto extends Model
         $query->execute($params);
         $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Producto');
         return $query->fetch();
+    }
+
+    public function save()
+    {
+
+        try {
+
+            $sql = 'INSERT INTO producto (nombre,descripcion,precio_compra,unidad_medida,marca,categoria)';
+            $sql .= ' VALUES (?,?,?,?,?,?)';
+            $params = [$this->nombre, $this->descripcion, $this->precio_compra, $this->unidad_medida, $this->marca, $this->categoria];
+            $query = $this->db->prepare($sql);
+            $query->execute($params);
+            return ($query->rowCount() != 0);
+
+        }catch ( PDOException $e)
+        {
+            return false;
+        }
+    }
+
+    public function update()
+    {
+
+       try {
+            $sql = 'UPDATE producto SET nombre=?, descripcion=?,precio_compra=?,unidad_medida=?,marca=?,categoria=?';
+            $sql .= ' WHERE id=?';
+            $params = [$this->nombre, $this->descripcion, $this->precio_compra, $this->unidad_medida, $this->marca, $this->categoria,$this->id];
+            $query = $this->db->prepare($sql);
+            $query->execute($params);
+            return ($query->rowCount() != 0);
+
+        }catch ( PDOException $e)
+        {
+            return false;
+        }
     }
 
 

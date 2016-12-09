@@ -74,7 +74,7 @@
 
                         <li role="separator" class="divider"></li>
                         <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Mi cuenta</a></li>
-                        <li><a href="<?= $_SERVER['PHP_SELF']?>?controller=Site&action=logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                        <li><a href="<?= $config->get('urlBase')?>?controller=Site&action=logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                     </ul>
                 </li>
             </ul>
