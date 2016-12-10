@@ -40,11 +40,11 @@ class Imagen extends Model
 
     }
     //devuelve una imagen con el id y el producto indicado
-    public function buscarImagen()
+    public function buscarImagen($id)
     {
         $sql = 'SELECT * FROM '.self::table;
         $sql .= ' where id = ?';
-        $params = [$this->id];
+        $params = [$id];
         $query = $this->db->prepare($sql);
         $query->execute($params);
         $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Imagen');

@@ -1,61 +1,77 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Multiple file upload Demo</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width">
-    <style>
-        .MultiFile-list {
-            width: 100%;
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
+    <?php
+    $head= "
+    <script src='assets/js/help-multiFile.js' ></script>
+    <script src='assets/js/multi-file.js' ></script>
+    ";
 
-        .MultiFile-label {
-            background-color: #DADADA;
-            border: 1px solid #EEEEEE;
-            font-size: 16px;
-            padding: 10px;
-            width: 300px;
-        }
+    include 'views/layout/admin/head.php';
+    ?>
 
-        .MultiFile-list a {
-            color: red;
-            text-decoration: none;
-        }
 
-        .MultiFile-list span {
+<style>
+    .MultiFile-list {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 
-        }
-    </style>
-    <script src='assets/js/help-multiFile.js' type="text/javascript"></script>
-    <script src='assets/js/multi-file.js' type="text/javascript" language="javascript"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#demo1').MultiFile({
-                list: '#demo1-list'
-            });
+    .MultiFile-label {
+        background-color: #DADADA;
+        border: 1px solid #EEEEEE;
+        font-size: 16px;
+        padding: 10px;
+        width: 300px;
+    }
+
+    .MultiFile-list a {
+        color: red;
+        text-decoration: none;
+    }
+
+    .MultiFile-list span {
+
+    }
+</style>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#demo1').MultiFile({
+            list: '#demo1-list'
         });
-    </script>
-</head>
-<body>
+    });
+</script>
 <?php
 echo $mensaje;
 ?>
+    <div class="row">
 <?php foreach ($imagenes as $i):  ?>
-    <div>
-        <img style="width: 50px" src="<?=$config->get('productos').$i->url?>" alt="producto<?=$i->url?>">
-        <a href="<?= $config->get('urlBase').'?controller=Producto&action=eliminarImagen&imagen='.$i->id.'&producto='.$i->producto?>">eliminar</a>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+        <img src="<?=$i->url?>"  alt="<?=$i->id?>" class="img-responsive">
+    <form action="<?= $config->get('urlBase').'?controller=Producto&action=eliminarImagen'?>" method="post">
+        <input type="hidden" name="imagen" value="<?=$i->id?>">
+        <input type="hidden" name="producto" value="<?=$i->producto?>">
+        <input type="submit"   value="Eliminar" class="btn btn-link"/>
+    </form>
     </div>
 <?php endforeach;
 ?>
-<br>
-<form enctype="multipart/form-data" action="" method="POST">
-    <input name="producto" value="<?= $producto?>" type="text">
-    <input id="demo1" name="imagen[]" type="file" class="multi" accept="gif|jpg|png" maxlength="3" />
-    <div id="demo1-list"></div>
-    <p><input type="submit" name="upload" value="subir"/></p>
-</form>
+    </div>
 
-</body>
-</html>
+        <h2>Subir Imagenes</h2>
+        <form enctype="multipart/form-data" action="" method="POST">
+            <div class="form-group">
+
+                <input  type="hidden" class="form-control" id="producto" name="producto" value="<?= $producto?>" >
+
+            <div class="form-group">
+                <label for="demo1">Imagenes Seleccionados</label>
+                <input id="demo1" name="imagen[]" type="file" class="multi" accept="gif|jpg|png" maxlength="3" />
+            </div>
+            <div class="form-group" id="demo1-list"></div>
+
+            <input type="submit" name="upload" value="Subir" class="btn  btn-warning btn-lg "/>
+        </form>
+
+
+    <?php
+    include 'views/layout/admin/foot.php';
+    ?>

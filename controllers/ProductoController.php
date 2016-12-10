@@ -42,18 +42,22 @@ class ProductoController extends Controller
 
                         $extension = end(explode(".",$nombre_img));
                         // Ruta donde se guardarán las imágenes que subamos
-                        $ruta='images/productos/';
-                        $directorio = $_SERVER['DOCUMENT_ROOT'] . '/emergentes/'.$ruta;
+
+                        $config = Config::singleton();
+                        $directorio=$config->get('imagenes').'productos/';
+
                         // Muevo la imagen desde el directorio temporal a nuestra ruta indicada anteriormente
 
 
                         $imagen=new Imagen();
                         $lastIdImage=$imagen->ultimoId();
                         $lastIdImage++;
+
+                        $nombre = $directorio. $producto_id . '-'.$lastIdImage.'.'.$extension ;
                         //el nombre de la imagen debe ser producto-imagen.extension
-                        move_uploaded_file($_FILES['imagen']['tmp_name'][$i], $directorio. $producto_id . '-'.$lastIdImage.'.'.$extension);
+                        move_uploaded_file($_FILES['imagen']['tmp_name'][$i], $nombre);
                         $imagen->id=$lastIdImage;
-                        $imagen->url=$producto_id . '-'.$lastIdImage.'.'.$extension;
+                        $imagen->url=$nombre;
                         $imagen->producto=$producto_id;
                         $imagen->crear();
 
@@ -86,14 +90,14 @@ class ProductoController extends Controller
     }
     public function eliminarImagenAction()
     {
-        if(!empty($_GET['imagen']) && !empty($_GET['producto'])){
+        if(!empty($_POST['imagen']) && !empty($_POST['producto'])){
             $model=new Imagen();
-            $producto=$_GET['producto'];
-            $model->id=$_GET['imagen'];
+            $producto=$_POST['producto'];
+            $model= $model->buscarImagen($_POST['imagen']);
             $url=$model->url;
             if($model->eliminar())
             {
-                unlink('images/productos/'.$url);
+                unlink($url);
                 header('Location: index.php?controller=Producto&action=imagen&id='.$producto);
 
             }else
