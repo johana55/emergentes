@@ -46,7 +46,7 @@ class Producto extends Model
     }
     public function categoria()
     {
-        $sql = 'SELECT * FROM '.'categoria ';
+        $sql = 'SELECT * FROM  categoria ';
         $sql .= ' where id = ?';
         $params = [$this->categoria];
         $query = $this->db->prepare($sql);

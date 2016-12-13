@@ -4,7 +4,7 @@ include 'views/layout/admin/head.php';
 
     <h2>Productos</h2>
 <a class="btn btn-primary" style="margin-bottom: 10px" href="<?= $config->get('urlBase').'?controller=Producto&action=create' ?>">Registrar Nuevo Producto</a>
-<table class="table table-bordered">
+<table class="table table-bordered table-responsive">
     <thead>
     <tr>
         <th>ID</th>

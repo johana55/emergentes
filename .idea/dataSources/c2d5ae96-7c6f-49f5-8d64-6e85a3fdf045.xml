@@ -11,8 +11,8 @@
     <schema id="3" parent="2" name="public">
       <object-id>2200</object-id>
       <visible>1</visible>
-      <introspection-state-number>666</introspection-state-number>
-      <introspection-timestamp>2016-12-09.08:56:14.781</introspection-timestamp>
+      <introspection-state-number>709</introspection-state-number>
+      <introspection-timestamp>2016-12-10.00:05:20.020</introspection-timestamp>
     </schema>
     <schema id="4" parent="2" name="pg_catalog">
       <object-id>11</object-id>
@@ -75,7 +75,7 @@
     </table>
     <table id="20" parent="3" name="catalogo">
       <object-id>16546</object-id>
-      <state-number>663</state-number>
+      <state-number>708</state-number>
     </table>
     <table id="21" parent="3" name="categoria">
       <object-id>16426</object-id>
@@ -226,12 +226,13 @@
       <data-type>char(50)|0</data-type>
     </column>
     <column id="53" parent="20" name="fechainicio">
-      <state-number>630</state-number>
-      <data-type>char(20)|0</data-type>
+      <state-number>707</state-number>
+      <data-type>timestamp|0</data-type>
     </column>
     <column id="54" parent="20" name="fechafin">
-      <state-number>630</state-number>
-      <data-type>char(20)|0</data-type>
+      <state-number>709</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
     </column>
     <column id="55" parent="20" name="nombre">
       <state-number>637</state-number>

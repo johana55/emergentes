@@ -252,8 +252,8 @@ INSERT INTO categoria VALUES (3,'CELULAR');
 CREATE TABLE catalogo (
   id serial NOT NULL,
   descripcion char(50),
-  fechaInicio char(20),
-  fechaFin char(20)
+  fechaInicio TIMESTAMP not null,
+  fechaFin TIMESTAMP NOT NULL
 )
 ;
 CREATE TABLE producto_catalogo (

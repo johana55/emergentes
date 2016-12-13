@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <?= isset($head)? $head : '' ?>
+
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <?= isset($head)? $head : '' ?>
 </head>
 <style>
     .navbar-inverse{background-color: purple;border-color: purple}

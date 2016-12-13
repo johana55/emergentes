@@ -21,11 +21,12 @@ class Catalogo extends Model
         $sql = 'INSERT INTO '.self::table;
         $sql .= ' (descripcion,fechainicio,fechafin,nombre,show)';
         $sql .= ' VALUES(?,?,?,?,?)';
-        $params = [$this->descripcion,$this->fechainicio,$this->fechafin,$this->nombre,$this->show];
+        $params = [$this->descripcion,$this->fechainicio->format('Y-m-d H:i'),$this->fechafin->format('Y-m-d H:i'),$this->nombre,$this->show];
         $query = $this->db->prepare($sql);
         $query->execute($params);
     }
-    public function editar()
+
+    public function buscar()
     {
         $sql = 'SELECT * FROM '.self::table;
         $sql.=' where id= ?';
@@ -37,18 +38,54 @@ class Catalogo extends Model
     }
     public function actualizar()
     {
-        $sql = 'UPDATE Catalogo SET ';
-        $sql .= 'descripcion=:descripcion, fechainicio=:fechainicio, fechafin=:fechafin, nombre=:nombre, show=:show';
-        $sql .= ' WHERE id=:id';
+        $sql = 'UPDATE catalogo SET ';
+        $sql .= 'descripcion=?, fechainicio=?, fechafin=?, nombre=? ';
+        $sql .= ' WHERE id=?';
         $params = [
-            'id' => $this->id,
-            'descripcion' => $this->descripcion,
-            'fechainicio'=>$this->fechainicio,
-            'fechafin'=>$this->fechafin,
-            'nombre'=>$this->nombre,
-            'show'=>$this->show
+            $this->descripcion,
+            $this->fechainicio->format('Y-m-d H:i'),
+            $this->fechafin->format('Y-m-d H:i'),
+            $this->nombre,
+             $this->id
         ];
         $query = $this->db->prepare($sql);
         return $query->execute($params);
     }
+
+    public function deshabilitar()
+    {
+        $sql = 'UPDATE catalogo SET ';
+        $sql .= 'show=?';
+        $sql .= ' WHERE id=?';
+        $params = [
+            0,
+            $this->id
+        ];
+        $query = $this->db->prepare($sql);
+        return $query->execute($params);
+    }
+
+    public function habilitar()
+    {
+        $sql = 'SELECT * FROM '.self::table.' WHERE show = 1';
+        $query = $this->db->prepare($sql);
+        $query->execute();
+        $catalogos = $query->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Catalogo');
+
+        foreach ($catalogos as $c)
+        {
+            $c->deshabilitar();
+        }
+
+        $sql = 'UPDATE catalogo SET ';
+        $sql .= 'show=?';
+        $sql .= ' WHERE id=?';
+        $params = [
+            1,
+            $this->id
+        ];
+        $query = $this->db->prepare($sql);
+        return $query->execute($params);
+    }
+
 }

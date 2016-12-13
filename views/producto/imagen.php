@@ -67,10 +67,16 @@ echo $mensaje;
                 <input id="demo1" name="imagen[]" type="file" class="multi" accept="gif|jpg|png" maxlength="3" />
             </div>
             <div class="form-group" id="demo1-list"></div>
+            <div class="row">
+                <div class="col-md-5">
+                    <input type="submit" name="upload" value="Subir" class="btn  btn-warning btn-block "/>
+                </div>
+            </div>
 
-            <input type="submit" name="upload" value="Subir" class="btn  btn-warning btn-lg "/>
         </form>
-
+<div class="row">
+    <a class="btn  btn-link btn-lg" style="margin: 20px" href="<?= $config->get('urlBase').'?controller=Producto&action=index'?>">Atras</a>
+</div>
 
     <?php
     include 'views/layout/admin/foot.php';

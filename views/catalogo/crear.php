@@ -1,7 +1,13 @@
 <?php
+$head= "
+    <link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"assets/css/jquery-ui.css\" />
+    <link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"assets/css/jquery-ui-timepicker-addon.css\" />
+    ";
+
 include 'views/layout/admin/head.php';
 ?>
-<h2>Editar </h2>
+
+<h2>Registrar Catalogo</h2>
 <form class="form-horizontal" action="" method="post" >
 
     <div class="form-group">
@@ -17,16 +23,16 @@ include 'views/layout/admin/head.php';
         </div>
     </div>
     <div class="form-group">
-        <label for="precio_compra" class="col-sm-2 control-label">Fecha Inicio</label>
+        <label for="fechainicio" class="col-sm-2 control-label">Fecha Inicio</label>
         <div class="col-sm-10">
-            <input type="datetime-local" name="inicio">
+            <input type="text" required id="fechainicio" name="inicio">
 
         </div>
     </div>
     <div class="form-group">
-        <label for="precio_compra" class="col-sm-2 control-label">Fecha Fin</label>
+        <label for="fin" class="col-sm-2 control-label">Fecha Fin</label>
         <div class="col-sm-10">
-            <input type="datetime-local" name="fin">
+            <input id="fin"  required type="text" name="fin">
         </div>
     </div>
 
@@ -34,11 +40,17 @@ include 'views/layout/admin/head.php';
 
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Registrar</button>
+            <button type="submit" class="btn btn-warning btn-lg">Registrar</button>
         </div>
     </div>
 
 </form>
+
+    <script type="text/javascript" src="assets/js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui-timepicker-addon.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui-sliderAccess.js"></script>
+    <script type="text/javascript" src="assets/js/datetime.js"></script>
 <?php
 include 'views/layout/admin/foot.php';
 ?>

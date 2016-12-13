@@ -19,9 +19,9 @@ class CatalogoController extends Controller
             $catalogo->id=$_POST['id'];
             $catalogo->nombre=$_POST['nombre'];
             $catalogo->descripcion=$_POST['descripcion'];
-            $catalogo->fechainicio=$_POST['inicio'];
-            $catalogo->fechafin=$_POST['fin'];
-            $catalogo->show=$_POST['show'];
+            $catalogo->fechainicio=new DateTime($_POST['fechaincio']);
+            $catalogo->fechafin=new DateTime($_POST['fechafin']);
+            //$catalogo->show= $_POST['show'] ? 1 :0;
            if( $catalogo->actualizar())
             header('Location: index.php?controller=Catalogo&action=index');
 
@@ -31,7 +31,7 @@ class CatalogoController extends Controller
             {
                 $model=new Catalogo();
                 $model->id=$_GET['id'];
-                $catalogo=$model->editar();
+                $catalogo=$model->buscar();
                 return $this->view->show('catalogo/editar',['c' => $catalogo]);
             }
     }
@@ -43,29 +43,26 @@ class CatalogoController extends Controller
             $catalogo=new Catalogo();
             $catalogo->nombre=$_POST['nombre'];
             $catalogo->descripcion=$_POST['descripcion'];
-            $catalogo->fechainicio=$_POST['inicio'];
-            $catalogo->fechafin=$_POST['fin'];
+            $catalogo->fechainicio= new DateTime($_POST['inicio']);
+            $catalogo->fechafin=new DateTime($_POST['fin']);
             $catalogo->show=$_POST['show'];
            $catalogo->crear();
-                header('Location: index.php?controller=Catalogo&action=index');
+
+            header('Location: index.php?controller=Catalogo&action=index');
 
         }
-        return $this->view->show('catalogo/crear',[]);
+        else {
+            return $this->view->show('catalogo/crear', []);
+        }
     }
-    public function unidad_medida()
-    {
-        $sql = 'SELECT * FROM '.'unidad_medida ';
-        $sql .= ' where id = ?';
-        $params = [$this->unidad_medida];
-        $query = $this->db->prepare($sql);
-        $query->execute($params);
-        $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'UnidadMedida');
-        return $query->fetch();
-    }
+
     //el parametro q son las bsquedas con las que se muestran los productos del catalogo
     public function productosAction()
     {
-
+       /* echo '<pre>';
+        print_r($_POST);
+        echo '</pre>';
+*/
         if (!empty($_POST['addProducto'])) {
 
             if (is_array($_POST['producto'])) {
@@ -85,12 +82,16 @@ class CatalogoController extends Controller
         }
         if(!empty($_GET['id']))
         {
-            $q=$_GET['q'];
+
             $producto=new ProductoC();
             $producto->catalogo=$_GET['id'];
-            $productos=$producto->listar($q);
+            $productos = $producto->listar();
 
-            $otrosProductos=$producto->listarOtros();
+            $otrosProductos = $producto->listarOtros();
+           /*echo '<pre>';
+            print_r($otrosProductos);
+            echo '</pre>';
+*/
             return $this->view->show('catalogo/productos',[
                 'productos' => $productos,
                 'otrosProductos'=>$otrosProductos,
@@ -98,6 +99,19 @@ class CatalogoController extends Controller
             ]);
         }
     }
+
+    public function listaOtrosProductosAction()
+    {
+       if($_POST)
+       {
+           $q=$_POST['q'];
+           $producto=new ProductoC();
+           $producto->catalogo=$_POST['catalogo'];;
+           $otrosProductos = $producto->buscarOtrosProductos($q);
+           echo json_encode($otrosProductos);
+       }
+    }
+
     public function eliminarProductoAction()
     {
         //este es el id de la tabla producto-catalogo
@@ -114,7 +128,8 @@ class CatalogoController extends Controller
     }
     public function addProductosAction()
     {
-        if (!empty($_POST['addProducto'])) {
+
+        if (!empty($_POST['s'])) {
 
             if (is_array($_POST['producto'])) {
 
@@ -131,5 +146,24 @@ class CatalogoController extends Controller
                 header('Location: index.php?controller=Catalogo&action=productos');
             }
         }
+    }
+
+
+    public function cambiarEstadoAction()
+    {
+       if($_POST)
+       {
+           $model=new Catalogo();
+           $model->id=$_POST['id'];
+           $catalogo=$model->buscar();
+
+           if($catalogo->show == 1)
+           {
+               $catalogo->deshabilitar();
+           }
+           else{
+               $catalogo->habilitar();
+           }
+       }
     }
 }

@@ -93,7 +93,7 @@ if( $auth->isGuest() )
 
                         // registrar acciones
                         $acciones = ['indexAction','crearAction','editarAction','productosAction',
-                            'eliminarProductoAction','addProductosAction'];
+                            'eliminarProductoAction','addProductosAction','cambiarEstadoAction','listaOtrosProductosAction'];
 
                         if(!in_array($actionName,$acciones))
                         {
