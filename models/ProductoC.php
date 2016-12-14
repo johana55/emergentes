@@ -21,30 +21,21 @@ class ProductoC extends Model
         return $query->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'ProductoC');
     }
 
-    public function productos()
+    public function producto()
     {
         $sql = 'SELECT p.*';
         $sql .= ' FROM producto p, producto_catalogo pc';
-        $sql .= ' WHERE  pc.producto = p.id and pc.catalogo = ? ';
-        $params = [$this->producto];
+        $sql .= ' WHERE  pc.producto = p.id and pc.catalogo = ? and pc.producto=? ';
+        $params = [$this->catalogo,$this->producto];
         $query = $this->db->prepare($sql);
         $query->execute($params);
         $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Producto');
         return $query->fetch();
     }
 
-    public function marca()
-    {
-        $sql = 'SELECT * FROM '.'marca ';
-        $sql .= ' where id = ?';
-        $params = [$this->marca];
-        $query = $this->db->prepare($sql);
-        $query->execute($params);
-        $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Marca');
-        return $query->fetch();
-    }
     public function eliminar()
     {
+
         $sql = 'DELETE FROM '.self::table.' where producto='.$this->producto.' and catalogo='.$this->catalogo;
         $query = $this->db->prepare($sql);
         return $query->execute();
@@ -64,7 +55,7 @@ class ProductoC extends Model
         $sql = 'INSERT INTO '.self::table;
         $sql .= ' (producto,catalogo,precio,stock,show)';
         $sql .= ' VALUES(?,?,?,?,?)';
-        $params = [$this->producto,$this->catalogo,0,0,0];
+        $params = [$this->producto,$this->catalogo,$this->precio,$this->stock,$this->show];
         $query = $this->db->prepare($sql);
         $query->execute($params);
     }
@@ -79,5 +70,38 @@ WHERE p.marca=ma.id AND p.unidad_medida=um.id AND p.categoria=ca.id AND p.id Not
         $query = $this->db->prepare($sql);
         $query->execute();
         return $query->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Producto');
+    }
+
+    public function buscar()
+    {
+        $sql = 'SELECT  pc.*';
+        $sql .= ' from producto_catalogo pc';
+        $sql .= ' WHERE  pc.id=?';
+        $params = [$this->id];
+        $query = $this->db->prepare($sql);
+        $query->execute($params);
+        $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'ProductoC');
+        return $query->fetch();
+    }
+
+    public function actualizar()
+    {
+        $sql = 'UPDATE producto_catalogo SET precio=?,stock=?,show=?';
+        $sql .= ' WHERE id=?';
+        $params = [$this->precio, $this->stock,$this->show, $this->id];
+        $query = $this->db->prepare($sql);
+        $query->execute($params);
+        return ($query->rowCount() != 0);
+    }
+
+    public function catalogoActivo()
+    {
+        $sql  ='SELECT pc.* ';
+        $sql .=' FROM  catalogo c,producto_catalogo pc ';
+        $sql .= ' where  c.show=1 and pc.catalogo=c.id and pc.show=TRUE';
+        $query = $this->db->prepare($sql);
+        $query->execute();
+        $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'ProductoC');
+        return $query->fetchAll();
     }
 }

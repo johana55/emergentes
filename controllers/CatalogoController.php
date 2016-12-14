@@ -120,31 +120,62 @@ class CatalogoController extends Controller
             $producto=new ProductoC();
             $producto->producto=$_GET['producto'];
             $producto->catalogo=$_GET['catalogo'];
+            $producto->eliminar();
+            header('Location: index.php?controller=Catalogo&action=productos&id='.$producto->catalogo);
+        }
 
-            if($producto->eliminar())
-                header('Location: index.php?controller=Catalogo&action=productos&id='.$producto->catalogo.'&q=');
+    }
+    public function editarProductoAction()
+    {
+        //este es el id de la tabla producto-catalogo
+        if(!empty($_GET['id']) && !$_POST )
+        {
+            $producto=new ProductoC();
+            $producto->id=$_GET['id'];
+            $producto = $producto->buscar();
+            return $this->view->show('catalogo/editar-producto',[
+                'producto' => $producto,
+            ]);
+        }
+        else{
+            if($_POST)
+            {
+                $producto=new ProductoC();
+                $producto->id=$_POST['id'];
+                $producto = $producto->buscar();
+                $producto->precio=$_POST['precio'];
+                if($_POST['stocknuevo'])
+                {
+                    $producto->stock += $_POST['stocknuevo'];
+                }
 
+                if(!empty($_POST['show']))
+                {
+                    $producto->show=1;
+                }
+                else{
+                    $producto->show=0;
+                }
+                $producto->actualizar();
+                header('Location: index.php?controller=Catalogo&action=productos&id='.$producto->catalogo);
+
+
+            }else {
+                echo "Pagina no encontrada";
+            }
         }
     }
     public function addProductosAction()
     {
+        if (!empty($_POST)) {
 
-        if (!empty($_POST['s'])) {
-
-            if (is_array($_POST['producto'])) {
-
-                $cantidad = count($_POST['producto']);
-                $productos = $_POST['producto'];
-                $catalogo=$_POST['catalogo'];
-
-                $productoC=new ProductoC();
-                $productoC->catalogo=$catalogo;
-                foreach ($productos as $p) {
-                    $productoC->producto=$p;
-                    $productoC->insertar();
-                }
-                header('Location: index.php?controller=Catalogo&action=productos');
-            }
+            $productoC=new ProductoC();
+            $productoC->producto=$_POST['producto'];
+            $productoC->catalogo=$_POST['catalogo'];
+            $productoC->show=$_POST['show'];
+            $productoC->precio=$_POST['precio'];
+            $productoC->stock=$_POST['stock'];
+            $productoC->insertar();
         }
     }
 
@@ -166,4 +197,6 @@ class CatalogoController extends Controller
            }
        }
     }
+
+
 }

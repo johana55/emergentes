@@ -2,7 +2,7 @@
 require 'models/UnidadMedida.php';
 require 'models/Marca.php';
 require 'models/Categoria.php';
-
+require 'models/Imagen.php';
 class Producto extends Model
 {
     public $id;
@@ -43,6 +43,16 @@ class Producto extends Model
         $query->execute($params);
         $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Marca');
         return $query->fetch();
+    }
+    public function imagenes()
+    {
+        $sql = 'SELECT * FROM '.'imagen ';
+        $sql .= ' where producto = ?';
+        $params = [$this->id];
+        $query = $this->db->prepare($sql);
+        $query->execute($params);
+        $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Imagen');
+        return $query->fetchAll();
     }
     public function categoria()
     {

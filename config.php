@@ -31,3 +31,6 @@ $config->set('imagenes','images/');
 
 
 // /home/grupo03/agenda/pc_login.php
+
+
+$config->set('aplication_name','Sistema de Comercio Electronico');

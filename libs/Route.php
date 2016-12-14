@@ -9,7 +9,7 @@ if( $auth->isGuest() )
     {
         case 'SiteController':
             // registrar acciones
-            $acciones = ['loginAction',];
+            $acciones = ['indexAction','loginAction','detailAction'];
             if(!in_array($actionName,$acciones))
             {
                 // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
@@ -39,13 +39,14 @@ if( $auth->isGuest() )
                     case 'SiteController':
 
                         // registrar acciones
-                        $acciones = ['indexAction','logoutAction',];
+                        $acciones = [ 'logoutAction',];
 
                         if(!in_array($actionName,$acciones))
                         {
                             // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
-                           if($actionName=='loginAction')
+                           if($actionName=='loginAction' || $actionName=='indexAction')
                            {
+                               $controllerName='CatalogoController';
                                $actionName='indexAction';
                            }else{
                             $controllerName = '';
@@ -93,7 +94,7 @@ if( $auth->isGuest() )
 
                         // registrar acciones
                         $acciones = ['indexAction','crearAction','editarAction','productosAction',
-                            'eliminarProductoAction','addProductosAction','cambiarEstadoAction','listaOtrosProductosAction'];
+                            'eliminarProductoAction','addProductosAction','cambiarEstadoAction','listaOtrosProductosAction','editarProductoAction'];
 
                         if(!in_array($actionName,$acciones))
                         {

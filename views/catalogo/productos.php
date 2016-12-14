@@ -17,6 +17,7 @@ include 'views/layout/admin/head.php';
             <th>Marca</th>
             <th>Precio </th>
             <th>Stock</th>
+            <th>Estado</th>
         </tr>
         </thead>
         <tbody>
@@ -24,14 +25,18 @@ include 'views/layout/admin/head.php';
             <tr>
                 <td><?=$producto->id ?></td>
                 <td><?=$producto->producto ?></td>
-                <td><?=$producto->nombre ?></td>
-                <td><?=$producto->marca()->descripcion ?></td>
+                <td><?=$producto->producto()->nombre ?></td>
+                <td><?=$producto->producto()->marca()->descripcion ?></td>
                 <td><?=$producto->precio?></td>
                 <td><?= $producto->stock?></td>
-                <td><?= $producto->show?></td>
+                <td><?= $producto->show? 'Habilitado':'Deshabilitado'?></td>
                 <td><a href="<?= $config->get('urlBase').'?controller=Catalogo&action=eliminarProducto&producto='.$producto->producto.'&catalogo='.$producto->catalogo?>">
-                        eliminar
-                    </a></td>
+                        Eliminar
+                    </a>|
+                    <a href="<?= $config->get('urlBase').'?controller=Catalogo&action=editarProducto&id='.$producto->id?>">
+                        Editar Stock
+                    </a>
+                </td>
             </tr>
         <?php } ?>
         </tbody>
@@ -101,7 +106,7 @@ include 'views/layout/admin/head.php';
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" id="cerrar" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                  <!--   <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>
@@ -141,13 +146,13 @@ include 'views/layout/admin/head.php';
                         <div class="form-group">
                             <label for="precio" class="col-sm-2 control-label">Precio Venta</label>
                             <div class="col-sm-10">
-                                <input type="number" min="0" id="precio" step="0.1" required class="form-control" name="precio" placeholder="Ingrese el precio de venta ">
+                                <input type="number" min="0" id="precio" step="0.1" required value="0" class="form-control" name="precio" placeholder="Ingrese el precio de venta ">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="stock" class="col-sm-2 control-label">Stock inicial</label>
                             <div class="col-sm-10">
-                                <input type="number" min="0" required class="form-control" name="stock" id="stock" placeholder="Ingrese el stock inicial">
+                                <input type="number" min="0" required class="form-control" name="stock" id="stock" value="0" placeholder="Ingrese el stock inicial">
                             </div>
                         </div>
                         <div class="form-group">
@@ -181,6 +186,11 @@ include 'views/layout/admin/head.php';
 
     <!--  Modal para el agregar producto -->
     <script>
+
+            // variable para verificar si se ingreso productos al catalogo, si se inserto se actualiza la pagina
+            var insertocambios=false;
+
+
 
         function buscar() {
             $.ajax(
@@ -224,13 +234,14 @@ include 'views/layout/admin/head.php';
                 {
                     url : '<?= $config->get('urlBase').'?controller=Catalogo&action=addProductos'?>',
                     type: "POST",
-                    data : {producto: $('#idproducto').val(),catalogo:$('#catalogo').val(),
-                    show:$('#show:checked').val() == "on" ? 1 : 0,
-                    stock: $('#stock').val(),
-                    precio: $('#precio').val()}
+                    data : {producto: $('#idproducto').val(),
+                        catalogo:$('#catalogo').val(),
+                        show:$('#show:checked').val() == "on" ? 1 : 0,
+                        stock: $('#stock').val(),
+                        precio: $('#precio').val()}
                 })
                 .done(function(data) {
-
+                    insertocambios=true;
                 }) ;
 
             buscar();
@@ -239,6 +250,19 @@ include 'views/layout/admin/head.php';
         function preparar(id) {
             $('#idproducto').val(id);
         }
+
+
+        $('#cerrar').click(function () {
+            if(insertocambios){
+               // alert("hay cambios");
+
+                insertocambios=false;
+                location.reload(true);
+            }
+            else {
+            //    alert("no hay cambios");
+            }
+        });
 
     </script>
 <?php

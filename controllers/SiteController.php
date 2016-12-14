@@ -1,12 +1,14 @@
 <?php
-
-
+require 'models/Catalogo.php';
+require 'models/Producto.php';
+require 'models/ProductoC.php';
 class SiteController extends Controller
 {
     public function indexAction()
     {
-        $mensaje = 'Mensaje enviado desde el controlador';
-        $parametros = ['mensaje' => $mensaje,];
+        $productos = new ProductoC();
+        $productos = $productos->catalogoActivo();
+        $parametros = ['productos'=> $productos,];
 
         // mostramos la vista
         $this->view->show('site/inicio', $parametros);
@@ -33,5 +35,11 @@ class SiteController extends Controller
         $user = User::singleton();
         $user::logout();
         header('Location: index.php?controller=Site&action=index');
+    }
+
+    public function detailAction()
+    {
+        echo $_GET['id'];
+        $this->view->show('site/detail');
     }
 }

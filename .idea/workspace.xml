@@ -2,28 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8674f2c0-832f-41b6-aa4a-c926325ff4e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/jquery-ui-timepicker-addon.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/datetime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery-ui-sliderAccess.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery-ui-timepicker-addon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/c2d5ae96-7c6f-49f5-8d64-6e85a3fdf045.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/c2d5ae96-7c6f-49f5-8d64-6e85a3fdf045.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/catalogo/editar-producto.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/layout/cliente/foot.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/layout/cliente/head.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/site/detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/bolsa-compra.png" afterPath="$PROJECT_DIR$/assets/img/bolsa-compra.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basedatos.sql" afterPath="$PROJECT_DIR$/basedatos.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/login.css" afterPath="$PROJECT_DIR$/assets/css/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/CatalogoController.php" afterPath="$PROJECT_DIR$/controllers/CatalogoController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Model.php" afterPath="$PROJECT_DIR$/libs/Model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/SiteController.php" afterPath="$PROJECT_DIR$/controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/FrontController.php" afterPath="$PROJECT_DIR$/libs/FrontController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Route.php" afterPath="$PROJECT_DIR$/libs/Route.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Catalogo.php" afterPath="$PROJECT_DIR$/models/Catalogo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Producto.php" afterPath="$PROJECT_DIR$/models/Producto.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/ProductoC.php" afterPath="$PROJECT_DIR$/models/ProductoC.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/catalogo/crear.php" afterPath="$PROJECT_DIR$/views/catalogo/crear.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/catalogo/editar.php" afterPath="$PROJECT_DIR$/views/catalogo/editar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/catalogo/index.php" afterPath="$PROJECT_DIR$/views/catalogo/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/catalogo/productos.php" afterPath="$PROJECT_DIR$/views/catalogo/productos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout/admin/foot.php" afterPath="$PROJECT_DIR$/views/layout/admin/foot.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout/admin/head.php" afterPath="$PROJECT_DIR$/views/layout/admin/head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/producto/imagen.php" afterPath="$PROJECT_DIR$/views/producto/imagen.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/producto/index.php" afterPath="$PROJECT_DIR$/views/producto/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/inicio.php" afterPath="$PROJECT_DIR$/views/site/inicio.php" />
     </list>
     <ignored path="login.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,24 +68,6 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PostgreSQL - db_grupo03@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="producto_catalogo" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -99,57 +75,7 @@
     <favorites_list name="login" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProductoC.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/ProductoC.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="74" column="99" selection-start-line="74" selection-start-column="86" selection-end-line="74" selection-end-column="99" />
-              <folding>
-                <marker date="1481516870922" expanded="true" signature="246:337" ph="SELECT pc.* producto_catalogo" />
-                <marker date="1481516870922" expanded="true" signature="246:352" ph="SELECT pc.id... producto_catalogo" />
-                <marker date="1481516870922" expanded="true" signature="995:1017" ph="SELECT * FRO... marca" />
-                <marker date="1481516870922" expanded="true" signature="1335:1411" ph="DELETE FROM " />
-                <marker date="1481516870922" expanded="true" signature="1569:1768" ph="SELECT p.* f... producto" />
-                <marker date="1481516870922" expanded="true" signature="1648:1748" ph="SELECT pc.pr... producto_catalogo" />
-                <marker date="1481516870922" expanded="true" signature="1986:1998" ph="INSERT INTO ${self::table}... " />
-                <marker date="1481516870922" expanded="true" signature="2321:2813" ph="SELECT p.id,... producto" />
-                <marker date="1481516870922" expanded="true" signature="2598:2747" ph="SELECT pc.pr... producto_catalogo" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="productos.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/catalogo/productos.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
-              <folding>
-                <element signature="e#131#150#0#HTML" expanded="true" />
-                <element signature="e#1745#1772#0#HTML" expanded="true" />
-                <element signature="e#5423#5430#0#HTML" expanded="true" />
-                <marker date="1481525696147" expanded="true" signature="2688:3188" ph="..." />
-                <marker date="1481525696147" expanded="true" signature="2725:3147" ph="..." />
-                <marker date="1481525696147" expanded="true" signature="3376:4261" ph="..." />
-                <marker date="1481525696147" expanded="true" signature="4876:4997" ph="..." />
-                <marker date="1481525696147" expanded="true" signature="4898:4984" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CatalogoController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/CatalogoController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="147" column="9" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -165,25 +91,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/catalogo/vista.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b8b3f48a-295c-4e5e-a6dc-6e2326ef2deb/console.sql" />
-        <option value="$PROJECT_DIR$/models/Rol.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8799222d-e12d-4587-a2f9-51e2e69d8d2c/console.sql" />
-        <option value="$PROJECT_DIR$/models/Usuario.php" />
-        <option value="$PROJECT_DIR$/controllers/Cliente.php" />
         <option value="$PROJECT_DIR$/controllers/UsuarioController.php" />
         <option value="$PROJECT_DIR$/models/Empleado.php" />
         <option value="$PROJECT_DIR$/assets/css/w3.css" />
         <option value="$PROJECT_DIR$/assets/js/jquery.min.js" />
         <option value="$PROJECT_DIR$/views/layout/mater.php" />
         <option value="$PROJECT_DIR$/views/layout/foot.php" />
-        <option value="$PROJECT_DIR$/libs/FrontController.php" />
         <option value="$PROJECT_DIR$/assets/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/views/layout/head.php" />
         <option value="$PROJECT_DIR$/controllers/EmpleadoController.php" />
-        <option value="$PROJECT_DIR$/views/site/inicio.php" />
         <option value="$PROJECT_DIR$/views/site/login.php" />
-        <option value="$PROJECT_DIR$/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/views/pedido/inicio.php" />
         <option value="$PROJECT_DIR$/views/usuario/editar.php" />
         <option value="$PROJECT_DIR$/views/usuario/index.php" />
@@ -193,7 +110,6 @@
         <option value="$PROJECT_DIR$/views/producto/editar.php" />
         <option value="$PROJECT_DIR$/models/Imagen.php" />
         <option value="$PROJECT_DIR$/controllers/ProductoController.php" />
-        <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/views/producto/index.php" />
         <option value="$PROJECT_DIR$/basedatos.sql" />
         <option value="$PROJECT_DIR$/views/layout/admin/head.php" />
@@ -209,13 +125,23 @@
         <option value="$PROJECT_DIR$/libs/Model.php" />
         <option value="$PROJECT_DIR$/views/catalogo/index.php" />
         <option value="$PROJECT_DIR$/views/producto/imagen.php" />
-        <option value="$PROJECT_DIR$/models/Producto.php" />
-        <option value="$PROJECT_DIR$/libs/Route.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c2d5ae96-7c6f-49f5-8d64-6e85a3fdf045/console.sql" />
-        <option value="$PROJECT_DIR$/models/ProductoC.php" />
         <option value="$PROJECT_DIR$/views/layout/admin/foot.php" />
         <option value="$PROJECT_DIR$/views/catalogo/productos.php" />
+        <option value="$PROJECT_DIR$/views/catalogo/editar-producto.php" />
+        <option value="$PROJECT_DIR$/libs/FrontController.php" />
+        <option value="$PROJECT_DIR$/config.php" />
+        <option value="$PROJECT_DIR$/assets/css/login.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b8b3f48a-295c-4e5e-a6dc-6e2326ef2deb/console.sql" />
         <option value="$PROJECT_DIR$/controllers/CatalogoController.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c2d5ae96-7c6f-49f5-8d64-6e85a3fdf045/console.sql" />
+        <option value="$PROJECT_DIR$/models/ProductoC.php" />
+        <option value="$PROJECT_DIR$/models/Producto.php" />
+        <option value="$PROJECT_DIR$/views/layout/cliente/head.php" />
+        <option value="$PROJECT_DIR$/views/site/inicio.php" />
+        <option value="$PROJECT_DIR$/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/libs/Route.php" />
+        <option value="$PROJECT_DIR$/views/site/detail.php" />
+        <option value="$PROJECT_DIR$/views/layout/cliente/foot.php" />
       </list>
     </option>
   </component>
@@ -257,6 +183,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -303,7 +230,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="producto" />
+              <option name="myItemId" value="site" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,82 +244,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emergentes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emergentes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="catalogo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emergentes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emergentes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emergentes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emergentes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emergentes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emergentes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -509,21 +367,24 @@
       <workItem from="1481428066174" duration="3366000" />
       <workItem from="1481432129565" duration="139000" />
       <workItem from="1481509199499" duration="16414000" />
+      <workItem from="1481640391945" duration="7064000" />
+      <workItem from="1481683342096" duration="15430000" />
+      <workItem from="1481715079644" duration="4632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199417000" />
+    <option name="totallyTimeSpent" value="226543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30605564" sideWeight="0.49319214" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16641453" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30605564" sideWeight="0.49319214" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14674735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30605564" sideWeight="0.50680786" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22087745" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1633888" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -538,6 +399,26 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30605564" sideWeight="0.50680786" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30605564" sideWeight="0.49319214" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14372164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22087745" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -557,149 +438,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/UnidadMedida.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="23" />
-          <folding>
-            <marker date="1481071026335" expanded="true" signature="193:207" ph="SELECT * FRO... ${self::table}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/bd74d5f/c2d5ae96-7c6f-49f5-8d64-6e85a3fdf045/db_grupo03.public.unidad_medida">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Marca.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <marker date="1481071026331" expanded="true" signature="154:168" ph="SELECT * FRO... ${self::table}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/SPDO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/bd74d5f/c2d5ae96-7c6f-49f5-8d64-6e85a3fdf045/db_grupo03.public.categoria">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding>
-            <marker date="1481071026339" expanded="true" signature="506:529" ph="SELECT * FRO... usuario" />
-            <marker date="1481071026339" expanded="true" signature="1262:1529" ph="SELECT m.des... cuaccion" />
-            <marker date="1481071026339" expanded="true" signature="1718:1755" ph="SELECT r.nom... usuario" />
-            <marker date="1481071026339" expanded="true" signature="2169:2197" ph="select * fro... usuario" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/producto/imagene.php" />
-    <entry file="file://$PROJECT_DIR$/images/productos/1-3.jpg" />
-    <entry file="file://$PROJECT_DIR$/images/productos/1-2.png" />
-    <entry file="file://$PROJECT_DIR$/images/productos/1-1.png" />
-    <entry file="file://$PROJECT_DIR$/images/productos/1-1.jpg" />
-    <entry file="file://$PROJECT_DIR$/libs/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-106">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/FrontController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/producto/editar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
           <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="83" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Imagen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-          <folding>
-            <marker date="1481340201542" expanded="true" signature="272:286" ph="SELECT * FRO... ${self::table}" />
-            <marker date="1481340201542" expanded="true" signature="596:616" ph="SELECT max(i... ${self::table}" />
-            <marker date="1481340201542" expanded="true" signature="806:818" ph="INSERT INTO ${self::table}... " />
-            <marker date="1481340201542" expanded="true" signature="1253:1267" ph="SELECT * FRO... ${self::table}" />
-            <marker date="1481340201542" expanded="true" signature="1588:1600" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/bd74d5f/c2d5ae96-7c6f-49f5-8d64-6e85a3fdf045/db_grupo03.public.imagen">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/producto/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -754,23 +496,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/producto/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="60" column="63" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/catalogo/modalEstado.php" />
     <entry file="dbDummy://dbtable:/bd74d5f/c2d5ae96-7c6f-49f5-8d64-6e85a3fdf045/db_grupo03.public.catalogo">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -778,7 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,36 +541,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/bd74d5f/c2d5ae96-7c6f-49f5-8d64-6e85a3fdf045/db_grupo03.public.producto_catalogo">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/ProductoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2227">
-          <caret line="131" column="27" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/bd74d5f/c2d5ae96-7c6f-49f5-8d64-6e85a3fdf045/db_grupo03.public.producto">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -850,19 +563,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/Route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="95" column="122" selection-start-line="95" selection-start-column="122" selection-end-line="95" selection-end-column="122" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/catalogo/vista.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,48 +578,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/catalogo/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="76" column="10" selection-start-line="75" selection-start-column="11" selection-end-line="76" selection-end-column="10" />
-          <folding>
-            <element signature="e#831#857#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Producto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
-          <folding>
-            <element signature="n#listar#0;n#Producto#0;n#!!top" expanded="false" />
-            <element signature="n#unidad_medida#0;n#Producto#0;n#!!top" expanded="false" />
-            <marker date="1481512574324" expanded="true" signature="372:386" ph="SELECT * FRO... ${self::table}" />
-            <marker date="1481512574324" expanded="true" signature="621:651" ph="SELECT * FRO... unidad_medida" />
-            <marker date="1481512574324" expanded="true" signature="981:1003" ph="SELECT * FRO... marca" />
-            <marker date="1481512574324" expanded="true" signature="1322:1346" ph="SELECT * FRO... categoria" />
-            <marker date="1481512574324" expanded="true" signature="1699:1713" ph="SELECT * FRO... ${self::table}" />
-            <marker date="1481512574324" expanded="true" signature="2056:2141" ph="INSERT INTO producto... " />
-            <marker date="1481512574324" expanded="true" signature="2612:2707" ph="UPDATE produ... " />
-            <marker date="1481512574324" expanded="true" signature="2612:2744" ph="UPDATE produ... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c2d5ae96-7c6f-49f5-8d64-6e85a3fdf045/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/layout/admin/head.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-170">
           <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,57 +589,272 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/catalogo/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="94" column="38" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/bd74d5f/c2d5ae96-7c6f-49f5-8d64-6e85a3fdf045/db_grupo03.public.producto_catalogo">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/catalogo/productos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="138" column="19" selection-start-line="138" selection-start-column="19" selection-end-line="175" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/catalogo/editar-producto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/FrontController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/producto/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/bolsa-compra.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/about.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="228" column="16" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/catalogo/crear.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="46" selection-end-column="7" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b8b3f48a-295c-4e5e-a6dc-6e2326ef2deb/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c2d5ae96-7c6f-49f5-8d64-6e85a3fdf045/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Imagen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-633">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <marker date="1481340201542" expanded="true" signature="272:286" ph="SELECT * FRO... ${self::table}" />
+            <marker date="1481340201542" expanded="true" signature="596:616" ph="SELECT max(i... ${self::table}" />
+            <marker date="1481340201542" expanded="true" signature="806:818" ph="INSERT INTO ${self::table}... " />
+            <marker date="1481340201542" expanded="true" signature="1253:1267" ph="SELECT * FRO... ${self::table}" />
+            <marker date="1481340201542" expanded="true" signature="1588:1600" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/ImagenController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Producto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+          <folding>
+            <element signature="n#unidad_medida#0;n#Producto#0;n#!!top" expanded="false" />
+            <marker date="1481717040487" expanded="true" signature="400:414" ph="SELECT * FRO... ${self::table}" />
+            <marker date="1481717040487" expanded="true" signature="649:679" ph="SELECT * FRO... unidad_medida" />
+            <marker date="1481717040487" expanded="true" signature="1009:1031" ph="SELECT * FRO... marca" />
+            <marker date="1481717040487" expanded="true" signature="1349:1372" ph="SELECT * FRO... imagen" />
+            <marker date="1481717040487" expanded="true" signature="1698:1722" ph="SELECT * FRO... categoria" />
+            <marker date="1481717040487" expanded="true" signature="2075:2089" ph="SELECT * FRO... ${self::table}" />
+            <marker date="1481717040487" expanded="true" signature="2432:2517" ph="INSERT INTO producto... " />
+            <marker date="1481717040487" expanded="true" signature="2988:3083" ph="UPDATE produ... " />
+            <marker date="1481717040487" expanded="true" signature="2988:3120" ph="UPDATE produ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/ProductoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="46" column="73" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/CatalogoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/ProductoC.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="74" column="99" selection-start-line="74" selection-start-column="86" selection-end-line="74" selection-end-column="99" />
+        <state relative-caret-position="263">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
-            <marker date="1481516870922" expanded="true" signature="246:337" ph="SELECT pc.* producto_catalogo" />
-            <marker date="1481516870922" expanded="true" signature="246:352" ph="SELECT pc.id... producto_catalogo" />
-            <marker date="1481516870922" expanded="true" signature="995:1017" ph="SELECT * FRO... marca" />
-            <marker date="1481516870922" expanded="true" signature="1335:1411" ph="DELETE FROM " />
-            <marker date="1481516870922" expanded="true" signature="1569:1768" ph="SELECT p.* f... producto" />
-            <marker date="1481516870922" expanded="true" signature="1648:1748" ph="SELECT pc.pr... producto_catalogo" />
-            <marker date="1481516870922" expanded="true" signature="1986:1998" ph="INSERT INTO ${self::table}... " />
-            <marker date="1481516870922" expanded="true" signature="2321:2813" ph="SELECT p.id,... producto" />
-            <marker date="1481516870922" expanded="true" signature="2598:2747" ph="SELECT pc.pr... producto_catalogo" />
+            <marker date="1481716807663" expanded="true" signature="246:337" ph="SELECT pc.* producto_catalogo" />
+            <marker date="1481716807663" expanded="true" signature="246:352" ph="SELECT pc.id... producto_catalogo" />
+            <marker date="1481716807663" expanded="true" signature="1032:1108" ph="DELETE FROM " />
+            <marker date="1481716807663" expanded="true" signature="1266:1465" ph="SELECT p.* f... producto" />
+            <marker date="1481716807663" expanded="true" signature="1345:1445" ph="SELECT pc.pr... producto_catalogo" />
+            <marker date="1481716807663" expanded="true" signature="1683:1695" ph="INSERT INTO ${self::table}... " />
+            <marker date="1481716807663" expanded="true" signature="2051:2543" ph="SELECT p.id,... producto" />
+            <marker date="1481716807663" expanded="true" signature="2328:2477" ph="SELECT pc.pr... producto_catalogo" />
+            <marker date="1481716807663" expanded="true" signature="3140:3192" ph="UPDATE produ... " />
+            <marker date="1481716807663" expanded="true" signature="3483:3627" ph="SELECT pc.* catalogo" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/catalogo/productos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
-          <folding>
-            <element signature="e#131#150#0#HTML" expanded="true" />
-            <element signature="e#1745#1772#0#HTML" expanded="true" />
-            <element signature="e#5423#5430#0#HTML" expanded="true" />
-            <marker date="1481525696147" expanded="true" signature="2688:3188" ph="..." />
-            <marker date="1481525696147" expanded="true" signature="2725:3147" ph="..." />
-            <marker date="1481525696147" expanded="true" signature="3376:4261" ph="..." />
-            <marker date="1481525696147" expanded="true" signature="4876:4997" ph="..." />
-            <marker date="1481525696147" expanded="true" signature="4898:4984" ph="{...}" />
-          </folding>
+    <entry file="dbDummy://dbtable:/bd74d5f/c2d5ae96-7c6f-49f5-8d64-6e85a3fdf045/db_grupo03.public.imagen">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/CatalogoController.php">
+    <entry file="file://$PROJECT_DIR$/views/layout/cliente/head.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="147" column="9" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
+        <state relative-caret-position="73">
+          <caret line="70" column="64" selection-start-line="70" selection-start-column="64" selection-end-line="70" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/empleado/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-548">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/producto/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="128" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="128" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/Route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/inicio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout/cliente/foot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
           <folding />
         </state>
       </provider>
