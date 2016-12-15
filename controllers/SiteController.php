@@ -1,4 +1,6 @@
 <?php
+
+require 'models/Cliente.php';
 require 'models/Catalogo.php';
 require 'models/Producto.php';
 require 'models/ProductoC.php';
@@ -43,8 +45,39 @@ class SiteController extends Controller
     }
     public function registrarAction()
     {
+        if(!empty($_POST))
+        {
 
-            header('Location: index.php?controller=Cliente&action=create');
+            $usuario= new Usuario();
 
+            $usuario->nombre_usuario=$_POST['nombre'];
+            $usuario->password=$_POST['password'];
+            $usuario->tipo=$_POST['tipo'];
+            $usuario->email=$_POST['email'];
+            $usuario->id_rol=$_POST['rol'];
+            $id_usuario=$usuario->crear();
+            if(!empty($id_usuario) and !is_null($id_usuario))
+            {
+                $cliente= new Cliente();
+                $cliente->id=$id_usuario;
+                $cliente->fechacreado=$_POST['fecha'];
+
+                $cliente->crear();
+                header('Location: index.php?controller=Site&action=index');
+            }
+            else
+            {
+                header('Location: index.php?controller=Site&action=index');
+
+            }
+        }else
+
+            return $this->view->show('site/registrar',[]);
+
+    }
+    public function salirAction()
+    {
+        User::logout();
+        header('Location: index.php?controller=Site&action=index');
     }
 }

@@ -57,7 +57,8 @@
                         <button class="w3-right btn btn-link btn-lg" onclick="document.getElementById('id01').style.display='block'" style="padding: 5px" href="" >Mi Cuenta</button>
                     <?php }else
                     {?>
-                        <a class="w3-right btn btn-link btn-lg" style="padding: 5px" href="" >Salir</a>
+                    <a class="w3-right btn btn-link btn-lg" style="padding: 5px" href="#" > <?php echo 'Usuario: '. User::singleton()->username;?></a>
+                        <a class="w3-right btn btn-link btn-lg" style="padding: 5px" href="<?= $config->get('urlBase').'?controller=Site&action=salir'?>" >Salir</a>
 
                     <?php   }  ?>
 
@@ -99,7 +100,7 @@
 
     <!--modal login-->
     <div id="id01" class="modal">
-        <a href="<?= $config->get('urlBase').'?controller=Site&action=registrar' ?>">Registrate!!!</a>
+
         <form class="modal-content animate" action="<?= $config->get('urlBase').'?controller=Site&action=login' ?>" method="post">
             <div class="imgcontainer">
 
@@ -120,6 +121,7 @@
                 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btnlogin">Cancelar</button>
                 <span class="psw">¿Olvido su <a href="#">password?</a></span>
             </div>
+            <div><a class="btn btn-danger" href="<?= $config->get('urlBase').'?controller=Site&action=registrar' ?>">Registrate!!!</a></div>
         </form>
     </div>
     <!--fin modal login-->
