@@ -30,13 +30,6 @@ class SPDO extends PDO
             echo $e->getMessage();
         }
 
-       /*Configuracion para conexion a mysql
-        *  parent::__construct(
-            'mysql:host=' . $config->get('dbhost') . ';dbname=' . $config->get('dbname'),
-            $config->get('dbuser'),
-            $config->get('dbpass')
-        );
-       */
     }
 
     public static function singleton()

@@ -10,7 +10,6 @@ class SiteController extends Controller
         $productos = $productos->catalogoActivo();
         $parametros = ['productos'=> $productos,];
 
-        // mostramos la vista
         $this->view->show('site/inicio', $parametros);
     }
 
@@ -41,5 +40,11 @@ class SiteController extends Controller
     {
         echo $_GET['id'];
         $this->view->show('site/detail');
+    }
+    public function registrarAction()
+    {
+
+            header('Location: index.php?controller=Cliente&action=create');
+
     }
 }

@@ -32,6 +32,7 @@
             </button>
             <a class="navbar-brand" href="#">VentasOnline</a>
         </div>
+
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul  class="nav navbar-nav">
                 <li class="dropdown">
@@ -48,7 +49,7 @@
                     <ul class="dropdown-menu">
                         <li ><a href="<?= $config->get('urlBase').'?controller=Catalogo&action=index'?>">Catalogos</a></li>
                         <li ><a href="<?= $config->get('urlBase').'?controller=Producto&action=index'?>">Productos</a></li>
-                        <li ><a href="#">Clientes</a></li>
+                        <li ><a href="<?= $config->get('urlBase').'?controller=Marca&action=index'?>">Marcas</a></li>
                         <li ><a href="<?= $config->get('urlBase').'?controller=Imagen&action=index'?>">Imagenes</a></li>
                     </ul>
                 </li>
@@ -57,6 +58,7 @@
                        role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-thumbs-up"></span> USUARIOS <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li ><a href="<?= $config->get('urlBase').'?controller=Empleado&action=index'?>">Empleados</a></li>
+                        <li ><a href="<?= $config->get('urlBase').'?controller=Cliente&action=index'?>">Clientes</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">

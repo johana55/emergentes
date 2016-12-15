@@ -115,6 +115,30 @@ if( $auth->isGuest() )
                             $actionName = '';
                         }
                         break;
+                    case 'ClienteController':
+
+                        // registrar acciones
+                        $acciones = ['indexAction','createAction','editarAction',];
+
+                        if(!in_array($actionName,$acciones))
+                        {
+                            // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
+                            $controllerName = '';
+                            $actionName = '';
+                        }
+                        break;
+                    case 'MarcaController':
+
+                        // registrar acciones
+                        $acciones = ['indexAction','createAction','editarAction','updateAction','eliminarAction',];
+
+                        if(!in_array($actionName,$acciones))
+                        {
+                            // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
+                            $controllerName = '';
+                            $actionName = '';
+                        }
+                        break;
                     default :
                         // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
                         $controllerName = '';

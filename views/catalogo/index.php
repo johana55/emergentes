@@ -1,7 +1,6 @@
 <?php
 include 'views/layout/admin/head.php';
 ?>
-
     <h2>Catalogos</h2>
     <a class="btn btn-primary" style="margin-bottom: 10px"  href="<?= $config->get('urlBase').'?controller=Catalogo&action=crear'?>">Registrar</a>
     <table class="table table-bordered table-responsive">

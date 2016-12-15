@@ -44,7 +44,6 @@
 
                 <div class="varbar-brand">
                     <ul class="nav nav-pills">
-                        <li role="presentation" ><a href="#">Mi Cuenta</a></li>
                         <li role="presentation" ><a href="#" style="margin: 0px"> <i style="padding: 0px; margin: 0px" class=" fa fa-shopping-cart fa-6" aria-hidden="true"></i> Finalizar Compra</a></li>
                     </ul>
 
@@ -55,7 +54,7 @@
                     <?php
                     $cliente = User::singleton();
                     if($cliente->isGuest()){?>
-                        <button class="w3-right btn btn-link btn-lg" onclick="document.getElementById('id01').style.display='block'" style="padding: 5px" href="" >Entrar</button>
+                        <button class="w3-right btn btn-link btn-lg" onclick="document.getElementById('id01').style.display='block'" style="padding: 5px" href="" >Mi Cuenta</button>
                     <?php }else
                     {?>
                         <a class="w3-right btn btn-link btn-lg" style="padding: 5px" href="" >Salir</a>
@@ -100,8 +99,7 @@
 
     <!--modal login-->
     <div id="id01" class="modal">
-
-
+        <a href="<?= $config->get('urlBase').'?controller=Site&action=registrar' ?>">Registrate!!!</a>
         <form class="modal-content animate" action="<?= $config->get('urlBase').'?controller=Site&action=login' ?>" method="post">
             <div class="imgcontainer">
 

@@ -6,7 +6,7 @@ abstract class Model
 
     public function __construct()
     {
-        $this->db = new SPDO();
+        $this->db = SPDO::singleton();
 
     }
 }
