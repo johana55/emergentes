@@ -1,6 +1,5 @@
 <?php
 require 'models/Producto.php';
-require 'models/Imagen.php';
 
 class ProductoController extends Controller
 {
