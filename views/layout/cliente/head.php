@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/w3.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="assets/css/login.css">
     <style>
@@ -23,6 +23,15 @@
 </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px;">
 <div id="inicio">
+    <div class="container">
+
+    </div>
+   <div class="container-fluid">
+       <header>
+
+       </header>
+   </div>
+
     <nav class="navbar navbar-default navbar-fixed-top" style="background: transparent;border-style: none" >
         <div class="container-fluid">
             <div class="navbar-header">
@@ -32,10 +41,27 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+
+                <div class="varbar-brand">
+                    <ul class="nav nav-pills">
+                        <li role="presentation" ><a href="#">Mi Cuenta</a></li>
+                        <li role="presentation" ><a href="#" style="margin: 0px"> <i style="padding: 0px; margin: 0px" class=" fa fa-shopping-cart fa-6" aria-hidden="true"></i> Finalizar Compra</a></li>
+                    </ul>
+
+                </div>
             </div>
             <div id="navbar" class="navbar-collapse collapse" >
                 <div>
-                    <button class="w3-right btn btn-link btn-lg" onclick="document.getElementById('id01').style.display='block'" style="padding: 5px" href="" >Entrar</button>
+                    <?php
+                    $cliente = User::singleton();
+                    if($cliente->isGuest()){?>
+                        <button class="w3-right btn btn-link btn-lg" onclick="document.getElementById('id01').style.display='block'" style="padding: 5px" href="" >Entrar</button>
+                    <?php }else
+                    {?>
+                        <a class="w3-right btn btn-link btn-lg" style="padding: 5px" href="" >Salir</a>
+
+                    <?php   }  ?>
+
                 </div>
                 <ul class="nav navbar-nav" style="width: 100%;background: transparent;font-size: large;font-weight: bold;">
                     <li class="col-sm-3" style="background-color: #120bdd;"><a href="#inicio" style="color: white;">INICIO</a></li>

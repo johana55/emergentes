@@ -11,8 +11,8 @@
     <schema id="3" parent="2" name="public">
       <object-id>2200</object-id>
       <visible>1</visible>
-      <introspection-state-number>709</introspection-state-number>
-      <introspection-timestamp>2016-12-10.00:05:20.020</introspection-timestamp>
+      <introspection-state-number>768</introspection-state-number>
+      <introspection-timestamp>2016-12-14.13:35:08.089</introspection-timestamp>
     </schema>
     <schema id="4" parent="2" name="pg_catalog">
       <object-id>11</object-id>
@@ -87,7 +87,7 @@
     </table>
     <table id="23" parent="3" name="cliente">
       <object-id>16575</object-id>
-      <state-number>646</state-number>
+      <state-number>768</state-number>
     </table>
     <table id="24" parent="3" name="cuaccion">
       <object-id>16499</object-id>
@@ -337,9 +337,9 @@
       <data-type>integer|0</data-type>
     </column>
     <column id="74" parent="23" name="fechacreado">
-      <state-number>640</state-number>
+      <state-number>768</state-number>
       <mandatory>1</mandatory>
-      <data-type>char(16)|0</data-type>
+      <data-type>timestamp|0</data-type>
     </column>
     <column id="75" parent="23" name="prospecto">
       <state-number>640</state-number>

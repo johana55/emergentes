@@ -296,7 +296,7 @@ CREATE TABLE prospecto (
 ;
 CREATE TABLE cliente (
   id integer NOT NULL,
-  fechacreado char(16) NOT NULL,
+  fechacreado TIMESTAMP NOT NULL,
   prospecto integer
 )
 ;
