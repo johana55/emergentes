@@ -59,792 +59,1320 @@
     <database id="19" name="db_grupo07sa">
       <object-id>16418</object-id>
     </database>
-    <database id="20" name="db_grupo07sa_p1">
-      <object-id>16419</object-id>
-    </database>
-    <database id="21" name="db_grupo07sc">
+    <database id="20" name="db_grupo07sc">
       <object-id>16420</object-id>
     </database>
-    <database id="22" name="db_grupo08sa">
+    <database id="21" name="db_grupo08sa">
       <object-id>16421</object-id>
     </database>
-    <database id="23" name="db_grupo08sc">
+    <database id="22" name="db_grupo08sc">
       <object-id>16422</object-id>
     </database>
-    <database id="24" name="db_grupo09sa">
+    <database id="23" name="db_grupo09sa">
       <object-id>16423</object-id>
     </database>
-    <database id="25" name="db_grupo09sc">
+    <database id="24" name="db_grupo09sc">
       <object-id>16424</object-id>
     </database>
-    <database id="26" name="db_grupo10sa">
+    <database id="25" name="db_grupo10sa">
       <object-id>16425</object-id>
     </database>
-    <database id="27" name="db_grupo10sc">
+    <database id="26" name="db_grupo10sc">
       <object-id>16426</object-id>
     </database>
-    <database id="28" name="db_grupo11sa">
+    <database id="27" name="db_grupo11sa">
       <object-id>16427</object-id>
     </database>
-    <database id="29" name="db_grupo11sc">
+    <database id="28" name="db_grupo11sc">
       <object-id>16428</object-id>
     </database>
-    <database id="30" name="db_grupo12sa">
+    <database id="29" name="db_grupo12sa">
       <object-id>16429</object-id>
     </database>
-    <database id="31" name="db_grupo12sc">
+    <database id="30" name="db_grupo12sc">
       <object-id>16430</object-id>
     </database>
-    <database id="32" name="db_grupo13sa">
+    <database id="31" name="db_grupo13sa">
       <object-id>16431</object-id>
     </database>
-    <database id="33" name="db_grupo13sc">
+    <database id="32" name="db_grupo13sc">
       <object-id>16432</object-id>
     </database>
-    <database id="34" name="db_juan">
-      <object-id>16433</object-id>
-    </database>
-    <database id="35" name="db_roundcube">
+    <database id="33" name="db_roundcube">
       <object-id>16434</object-id>
     </database>
-    <database id="36" name="docente">
-      <object-id>16435</object-id>
-    </database>
-    <database id="37" name="grupo07m">
-      <object-id>16436</object-id>
-    </database>
-    <database id="38" name="ventas">
-      <object-id>16437</object-id>
-    </database>
-    <database id="39" name="db_grupo04">
+    <database id="34" name="db_grupo04">
       <object-id>23778</object-id>
     </database>
-    <database id="40" name="db_grupo05">
+    <database id="35" name="db_grupo05">
       <object-id>23779</object-id>
     </database>
-    <database id="41" name="db_grupo06">
+    <database id="36" name="db_grupo06">
       <object-id>23780</object-id>
     </database>
-    <database id="42" name="db_grupo07">
+    <database id="37" name="db_grupo07">
       <object-id>23781</object-id>
     </database>
-    <database id="43" name="db_grupo14sa">
+    <database id="38" name="db_grupo14sa">
       <object-id>24408</object-id>
     </database>
-    <database id="44" name="db_grupo15sa">
+    <database id="39" name="db_grupo15sa">
       <object-id>24409</object-id>
     </database>
-    <database id="45" name="db_grupo16sa">
+    <database id="40" name="db_grupo16sa">
       <object-id>24410</object-id>
     </database>
-    <database id="46" name="db_grupo17sa">
+    <database id="41" name="db_grupo17sa">
       <object-id>24411</object-id>
     </database>
-    <database id="47" name="db_grupo18sa">
+    <database id="42" name="db_grupo18sa">
       <object-id>24412</object-id>
     </database>
-    <database id="48" name="db_grupo14sc">
+    <database id="43" name="db_grupo14sc">
       <object-id>24413</object-id>
     </database>
-    <database id="49" name="db_grupo15sc">
+    <database id="44" name="db_grupo15sc">
       <object-id>24414</object-id>
     </database>
-    <database id="50" name="db_grupo16sc">
+    <database id="45" name="db_grupo16sc">
       <object-id>24415</object-id>
     </database>
-    <database id="51" name="db_grupo17sc">
+    <database id="46" name="db_grupo17sc">
       <object-id>24416</object-id>
     </database>
-    <database id="52" name="db_grupo18sc">
+    <database id="47" name="db_grupo18sc">
       <object-id>24417</object-id>
     </database>
-    <database id="53" name="db_grupo19sc">
+    <database id="48" name="db_grupo19sc">
       <object-id>24612</object-id>
     </database>
-    <database id="54" name="db_grupo20sc">
+    <database id="49" name="db_grupo20sc">
       <object-id>24613</object-id>
     </database>
-    <schema id="55" parent="1" name="public">
+    <database id="50" name="db_grupo19sa">
+      <object-id>29047</object-id>
+    </database>
+    <database id="51" name="db_grupo20sa">
+      <object-id>29048</object-id>
+    </database>
+    <schema id="52" parent="1" name="public">
       <object-id>2200</object-id>
       <visible>1</visible>
-      <introspection-state-number>11877</introspection-state-number>
-      <introspection-timestamp>2016-12-15.18:35:01.475</introspection-timestamp>
+      <introspection-state-number>12667</introspection-state-number>
+      <introspection-timestamp>2016-12-18.22:35:02.746</introspection-timestamp>
     </schema>
-    <schema id="56" parent="1" name="pg_catalog">
+    <schema id="53" parent="1" name="pg_catalog">
       <object-id>11</object-id>
     </schema>
-    <schema id="57" parent="1" name="pg_toast">
+    <schema id="54" parent="1" name="pg_toast">
       <object-id>99</object-id>
     </schema>
-    <schema id="58" parent="1" name="pg_temp_1">
+    <schema id="55" parent="1" name="pg_temp_1">
       <object-id>11814</object-id>
     </schema>
-    <schema id="59" parent="1" name="pg_toast_temp_1">
+    <schema id="56" parent="1" name="pg_toast_temp_1">
       <object-id>11815</object-id>
     </schema>
-    <schema id="60" parent="1" name="information_schema">
+    <schema id="57" parent="1" name="information_schema">
       <object-id>13034</object-id>
     </schema>
-    <sequence id="61" parent="55" name="catalogo_id_seq">
-      <object-id>27726</object-id>
-      <state-number>11853</state-number>
+    <sequence id="58" parent="52" name="accion_id_seq">
+      <object-id>30148</object-id>
+      <state-number>12563</state-number>
     </sequence>
-    <sequence id="62" parent="55" name="categoria_id_seq">
-      <object-id>27656</object-id>
-      <state-number>11826</state-number>
+    <sequence id="59" parent="52" name="casouso_id_seq">
+      <object-id>30154</object-id>
+      <state-number>12564</state-number>
     </sequence>
-    <sequence id="63" parent="55" name="imagen_id_seq">
-      <object-id>27662</object-id>
-      <state-number>11827</state-number>
+    <sequence id="60" parent="52" name="catalogo_id_seq">
+      <object-id>30160</object-id>
+      <state-number>12565</state-number>
     </sequence>
-    <sequence id="64" parent="55" name="marca_id_seq">
-      <object-id>27671</object-id>
-      <state-number>11828</state-number>
+    <sequence id="61" parent="52" name="categoria_id_seq">
+      <object-id>30166</object-id>
+      <state-number>12566</state-number>
     </sequence>
-    <sequence id="65" parent="55" name="producto_catalogo_id_seq">
-      <object-id>27732</object-id>
-      <state-number>11854</state-number>
+    <sequence id="62" parent="52" name="departamento_id_seq">
+      <object-id>30178</object-id>
+      <state-number>12569</state-number>
     </sequence>
-    <sequence id="66" parent="55" name="producto_id_seq">
-      <object-id>27677</object-id>
-      <state-number>11829</state-number>
+    <sequence id="63" parent="52" name="direccion_id_seq">
+      <object-id>30184</object-id>
+      <state-number>12570</state-number>
     </sequence>
-    <sequence id="67" parent="55" name="rol_id_seq">
-      <object-id>27641</object-id>
-      <state-number>11815</state-number>
+    <sequence id="64" parent="52" name="imagen_id_seq">
+      <object-id>30196</object-id>
+      <state-number>12573</state-number>
     </sequence>
-    <sequence id="68" parent="55" name="secuencia">
+    <sequence id="65" parent="52" name="marca_id_seq">
+      <object-id>30205</object-id>
+      <state-number>12574</state-number>
+    </sequence>
+    <sequence id="66" parent="52" name="metodo_envio_id_seq">
+      <object-id>30211</object-id>
+      <state-number>12575</state-number>
+    </sequence>
+    <sequence id="67" parent="52" name="metodo_pago_id_seq">
+      <object-id>30218</object-id>
+      <state-number>12576</state-number>
+    </sequence>
+    <sequence id="68" parent="52" name="modulo_id_seq">
+      <object-id>30225</object-id>
+      <state-number>12577</state-number>
+    </sequence>
+    <sequence id="69" parent="52" name="pais_id_seq">
+      <object-id>30231</object-id>
+      <state-number>12578</state-number>
+    </sequence>
+    <sequence id="70" parent="52" name="pedido_id_seq">
+      <object-id>30237</object-id>
+      <state-number>12579</state-number>
+    </sequence>
+    <sequence id="71" parent="52" name="producto_catalogo_id_seq">
+      <object-id>30256</object-id>
+      <state-number>12583</state-number>
+    </sequence>
+    <sequence id="72" parent="52" name="producto_id_seq">
+      <object-id>30250</object-id>
+      <state-number>12582</state-number>
+    </sequence>
+    <sequence id="73" parent="52" name="rol_id_seq">
+      <object-id>30262</object-id>
+      <state-number>12584</state-number>
+    </sequence>
+    <sequence id="74" parent="52" name="secuencia">
       <object-id>24367</object-id>
       <state-number>10806</state-number>
     </sequence>
-    <sequence id="69" parent="55" name="unidad_medida_id_seq">
-      <object-id>27683</object-id>
-      <state-number>11830</state-number>
+    <sequence id="75" parent="52" name="unidad_medida_id_seq">
+      <object-id>30268</object-id>
+      <state-number>12585</state-number>
     </sequence>
-    <sequence id="70" parent="55" name="usuario_id_seq">
-      <object-id>27626</object-id>
-      <state-number>11811</state-number>
+    <sequence id="76" parent="52" name="usuario_id_seq">
+      <object-id>30274</object-id>
+      <state-number>12586</state-number>
     </sequence>
-    <table id="71" parent="55" name="catalogo">
-      <object-id>27728</object-id>
-      <state-number>11877</state-number>
+    <table id="77" parent="52" name="accion">
+      <object-id>30150</object-id>
+      <state-number>12629</state-number>
     </table>
-    <table id="72" parent="55" name="categoria">
-      <object-id>27658</object-id>
-      <state-number>11842</state-number>
+    <table id="78" parent="52" name="casouso">
+      <object-id>30156</object-id>
+      <state-number>12630</state-number>
     </table>
-    <table id="73" parent="55" name="ciudad">
-      <object-id>27774</object-id>
-      <state-number>11868</state-number>
+    <table id="79" parent="52" name="catalogo">
+      <object-id>30162</object-id>
+      <state-number>12667</state-number>
     </table>
-    <table id="74" parent="55" name="cliente">
-      <object-id>27754</object-id>
-      <state-number>11860</state-number>
+    <table id="80" parent="52" name="categoria">
+      <object-id>30168</object-id>
+      <state-number>12643</state-number>
     </table>
-    <table id="75" parent="55" name="departamento">
-      <object-id>27777</object-id>
-      <state-number>11870</state-number>
+    <table id="81" parent="52" name="cliente">
+      <object-id>30172</object-id>
+      <state-number>12628</state-number>
     </table>
-    <table id="76" parent="55" name="empleado">
-      <object-id>27757</object-id>
-      <state-number>11861</state-number>
+    <table id="82" parent="52" name="cuaccion">
+      <object-id>30175</object-id>
+      <state-number>12641</state-number>
     </table>
-    <table id="77" parent="55" name="imagen">
-      <object-id>27664</object-id>
-      <state-number>11841</state-number>
+    <table id="83" parent="52" name="departamento">
+      <object-id>30180</object-id>
+      <state-number>12632</state-number>
     </table>
-    <table id="78" parent="55" name="marca">
-      <object-id>27673</object-id>
-      <state-number>11843</state-number>
+    <table id="84" parent="52" name="direccion">
+      <object-id>30186</object-id>
+      <state-number>12637</state-number>
     </table>
-    <table id="79" parent="55" name="pais">
-      <object-id>27780</object-id>
-      <state-number>11870</state-number>
+    <table id="85" parent="52" name="empleado">
+      <object-id>30190</object-id>
+      <state-number>12634</state-number>
     </table>
-    <table id="80" parent="55" name="producto">
-      <object-id>27679</object-id>
-      <state-number>11855</state-number>
+    <table id="86" parent="52" name="envios">
+      <object-id>30193</object-id>
+      <state-number>12635</state-number>
     </table>
-    <table id="81" parent="55" name="producto_catalogo">
-      <object-id>27734</object-id>
-      <state-number>11855</state-number>
+    <table id="87" parent="52" name="imagen">
+      <object-id>30198</object-id>
+      <state-number>12636</state-number>
     </table>
-    <table id="82" parent="55" name="rol">
-      <object-id>27643</object-id>
-      <state-number>11818</state-number>
+    <table id="88" parent="52" name="marca">
+      <object-id>30207</object-id>
+      <state-number>12644</state-number>
     </table>
-    <table id="83" parent="55" name="unidad_medida">
-      <object-id>27685</object-id>
-      <state-number>11844</state-number>
+    <table id="89" parent="52" name="metodo_envio">
+      <object-id>30213</object-id>
+      <state-number>12575</state-number>
     </table>
-    <table id="84" parent="55" name="usuario">
-      <object-id>27628</object-id>
-      <state-number>11861</state-number>
+    <table id="90" parent="52" name="metodo_pago">
+      <object-id>30220</object-id>
+      <state-number>12638</state-number>
     </table>
-    <column id="85" parent="71" name="id">
-      <state-number>11853</state-number>
+    <table id="91" parent="52" name="modulo">
+      <object-id>30227</object-id>
+      <state-number>12626</state-number>
+    </table>
+    <table id="92" parent="52" name="pais">
+      <object-id>30233</object-id>
+      <state-number>12631</state-number>
+    </table>
+    <table id="93" parent="52" name="pedido">
+      <object-id>30239</object-id>
+      <state-number>12639</state-number>
+    </table>
+    <table id="94" parent="52" name="pedido_producto">
+      <object-id>30243</object-id>
+      <state-number>12640</state-number>
+    </table>
+    <table id="95" parent="52" name="permiso">
+      <object-id>30247</object-id>
+      <state-number>12642</state-number>
+    </table>
+    <table id="96" parent="52" name="producto">
+      <object-id>30252</object-id>
+      <state-number>12647</state-number>
+    </table>
+    <table id="97" parent="52" name="producto_catalogo">
+      <object-id>30258</object-id>
+      <state-number>12647</state-number>
+    </table>
+    <table id="98" parent="52" name="rol">
+      <object-id>30264</object-id>
+      <state-number>12648</state-number>
+    </table>
+    <table id="99" parent="52" name="unidad_medida">
+      <object-id>30270</object-id>
+      <state-number>12645</state-number>
+    </table>
+    <table id="100" parent="52" name="usuario">
+      <object-id>30276</object-id>
+      <state-number>12648</state-number>
+    </table>
+    <column id="101" parent="77" name="id">
+      <state-number>12563</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;accion_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="102" parent="77" name="descripcion">
+      <state-number>12563</state-number>
+      <mandatory>1</mandatory>
+      <data-type>char(30)|0</data-type>
+    </column>
+    <index id="103" parent="77" name="pk_accion">
+      <object-id>30283</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="104" parent="77" name="uq_accion_descripcion">
+      <object-id>30332</object-id>
+      <columns>descripcion</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="105" parent="77" name="pk_accion">
+      <object-id>30284</object-id>
+      <columns>id</columns>
+      <underlying-index>pk_accion</underlying-index>
+      <primary>1</primary>
+    </key>
+    <key id="106" parent="77" name="uq_accion_descripcion">
+      <object-id>30333</object-id>
+      <columns>descripcion</columns>
+      <underlying-index>uq_accion_descripcion</underlying-index>
+    </key>
+    <column id="107" parent="78" name="id">
+      <state-number>12564</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;casouso_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="108" parent="78" name="descripcion">
+      <state-number>12564</state-number>
+      <mandatory>1</mandatory>
+      <data-type>char(20)|0</data-type>
+    </column>
+    <column id="109" parent="78" name="modulo">
+      <state-number>12564</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <index id="110" parent="78" name="pk_casouso">
+      <object-id>30285</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="111" parent="78" name="uq_casouso_descripcion">
+      <object-id>30334</object-id>
+      <columns>descripcion</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="112" parent="78" name="pk_casouso">
+      <object-id>30286</object-id>
+      <columns>id</columns>
+      <underlying-index>pk_casouso</underlying-index>
+      <primary>1</primary>
+    </key>
+    <key id="113" parent="78" name="uq_casouso_descripcion">
+      <object-id>30335</object-id>
+      <columns>descripcion</columns>
+      <underlying-index>uq_casouso_descripcion</underlying-index>
+    </key>
+    <foreign-key id="114" parent="78" name="fk_casouso_modulo">
+      <object-id>30350</object-id>
+      <columns>modulo</columns>
+      <ref-key>~.modulo.pk_modulo</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="115" parent="79" name="id">
+      <state-number>12565</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;catalogo_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="86" parent="71" name="descripcion">
-      <state-number>11853</state-number>
+    <column id="116" parent="79" name="descripcion">
+      <state-number>12565</state-number>
       <data-type>char(50)|0</data-type>
     </column>
-    <column id="87" parent="71" name="fechainicio">
-      <state-number>11853</state-number>
-      <mandatory>1</mandatory>
+    <column id="117" parent="79" name="fechainicio">
+      <state-number>12565</state-number>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="88" parent="71" name="fechafin">
-      <state-number>11853</state-number>
-      <mandatory>1</mandatory>
+    <column id="118" parent="79" name="fechafin">
+      <state-number>12565</state-number>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="89" parent="71" name="nombre">
-      <state-number>11855</state-number>
+    <column id="119" parent="79" name="nombre">
+      <state-number>12666</state-number>
       <data-type>char(50)|0</data-type>
     </column>
-    <column id="90" parent="71" name="show">
-      <state-number>11877</state-number>
+    <column id="120" parent="79" name="show">
+      <state-number>12667</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <index id="91" parent="71" name="pk_catalogo">
-      <object-id>27738</object-id>
+    <index id="121" parent="79" name="pk_catalogo">
+      <object-id>30287</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="92" parent="71" name="catalogo_nombre_key">
-      <object-id>27752</object-id>
+    <index id="122" parent="79" name="catalogo_nombre_key">
+      <object-id>30465</object-id>
       <columns>nombre</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="93" parent="71" name="pk_catalogo">
-      <object-id>27739</object-id>
+    <key id="123" parent="79" name="pk_catalogo">
+      <object-id>30288</object-id>
       <columns>id</columns>
       <underlying-index>pk_catalogo</underlying-index>
       <primary>1</primary>
     </key>
-    <key id="94" parent="71" name="catalogo_nombre_key">
-      <object-id>27753</object-id>
+    <key id="124" parent="79" name="catalogo_nombre_key">
+      <object-id>30466</object-id>
       <columns>nombre</columns>
       <underlying-index>catalogo_nombre_key</underlying-index>
     </key>
-    <column id="95" parent="72" name="id">
-      <state-number>11826</state-number>
+    <column id="125" parent="80" name="id">
+      <state-number>12566</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;categoria_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="96" parent="72" name="descripcion">
-      <state-number>11826</state-number>
+    <column id="126" parent="80" name="descripcion">
+      <state-number>12566</state-number>
       <mandatory>1</mandatory>
       <data-type>char(30)|0</data-type>
     </column>
-    <index id="97" parent="72" name="pk_categoria">
-      <object-id>27690</object-id>
+    <index id="127" parent="80" name="pk_categoria">
+      <object-id>30289</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="98" parent="72" name="uq_categoria_descripcion">
-      <object-id>27700</object-id>
+    <index id="128" parent="80" name="uq_categoria_descripcion">
+      <object-id>30336</object-id>
       <columns>descripcion</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="99" parent="72" name="pk_categoria">
-      <object-id>27691</object-id>
+    <key id="129" parent="80" name="pk_categoria">
+      <object-id>30290</object-id>
       <columns>id</columns>
       <underlying-index>pk_categoria</underlying-index>
       <primary>1</primary>
     </key>
-    <key id="100" parent="72" name="uq_categoria_descripcion">
-      <object-id>27701</object-id>
+    <key id="130" parent="80" name="uq_categoria_descripcion">
+      <object-id>30337</object-id>
       <columns>descripcion</columns>
       <underlying-index>uq_categoria_descripcion</underlying-index>
     </key>
-    <column id="101" parent="73" name="id">
-      <state-number>11862</state-number>
+    <column id="131" parent="81" name="id">
+      <state-number>12567</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <column id="102" parent="73" name="nombre">
-      <state-number>11862</state-number>
-      <data-type>char(20)|0</data-type>
+    <column id="132" parent="81" name="nombres">
+      <state-number>12567</state-number>
+      <data-type>varchar(100)|0</data-type>
     </column>
-    <column id="103" parent="73" name="depto">
-      <state-number>11862</state-number>
+    <column id="133" parent="81" name="apellidos">
+      <state-number>12567</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="134" parent="81" name="correo">
+      <state-number>12567</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="135" parent="81" name="direccion">
+      <state-number>12567</state-number>
+      <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <index id="104" parent="73" name="pk_ciudad">
-      <object-id>27783</object-id>
+    <column id="136" parent="81" name="telefono">
+      <state-number>12567</state-number>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="137" parent="81" name="nit">
+      <state-number>12567</state-number>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="138" parent="81" name="localidad">
+      <state-number>12567</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <index id="139" parent="81" name="pk_prospecto">
+      <object-id>30291</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="105" parent="73" name="pk_ciudad">
-      <object-id>27784</object-id>
+    <key id="140" parent="81" name="pk_prospecto">
+      <object-id>30292</object-id>
       <columns>id</columns>
-      <underlying-index>pk_ciudad</underlying-index>
+      <underlying-index>pk_prospecto</underlying-index>
       <primary>1</primary>
     </key>
-    <foreign-key id="106" parent="73" name="fk_ciudad_departamento">
-      <object-id>27789</object-id>
-      <columns>depto</columns>
-      <ref-key>~.departamento.pk_departamento</ref-key>
-      <cascade-update-rule>restrict</cascade-update-rule>
-      <cascade-delete-rule>restrict</cascade-delete-rule>
-    </foreign-key>
-    <column id="107" parent="74" name="id">
-      <state-number>11856</state-number>
-      <mandatory>1</mandatory>
-      <data-type>integer|0</data-type>
-    </column>
-    <column id="108" parent="74" name="fechacreado">
-      <state-number>11856</state-number>
-      <mandatory>1</mandatory>
-      <data-type>timestamp|0</data-type>
-    </column>
-    <column id="109" parent="74" name="prospecto">
-      <state-number>11856</state-number>
-      <data-type>integer|0</data-type>
-    </column>
-    <index id="110" parent="74" name="pk_cliente">
-      <object-id>27760</object-id>
-      <columns>id</columns>
-      <desc-columns></desc-columns>
-      <unique>1</unique>
-    </index>
-    <key id="111" parent="74" name="pk_cliente">
-      <object-id>27761</object-id>
-      <columns>id</columns>
-      <underlying-index>pk_cliente</underlying-index>
-      <primary>1</primary>
-    </key>
-    <foreign-key id="112" parent="74" name="fk_cliente_usuario">
-      <object-id>27764</object-id>
+    <foreign-key id="141" parent="81" name="fk_cliente_usuario">
+      <object-id>30360</object-id>
       <columns>id</columns>
       <ref-key>~.usuario.pk_usuario</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="113" parent="75" name="id">
-      <state-number>11863</state-number>
+    <foreign-key id="142" parent="81" name="fk_cliente_direccion">
+      <object-id>30355</object-id>
+      <columns>direccion</columns>
+      <ref-key>~.direccion.pk_direccion</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="143" parent="82" name="cu">
+      <state-number>12568</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <column id="114" parent="75" name="nombre">
-      <state-number>11863</state-number>
-      <data-type>char(20)|0</data-type>
-    </column>
-    <column id="115" parent="75" name="pais">
-      <state-number>11863</state-number>
+    <column id="144" parent="82" name="accion">
+      <state-number>12568</state-number>
+      <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <index id="116" parent="75" name="pk_departamento">
-      <object-id>27785</object-id>
+    <index id="145" parent="82" name="pk_cuaccion">
+      <object-id>30293</object-id>
+      <columns>cu
+accion</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="146" parent="82" name="pk_cuaccion">
+      <object-id>30294</object-id>
+      <columns>cu
+accion</columns>
+      <underlying-index>pk_cuaccion</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="147" parent="82" name="fk_cuaccion_casouso">
+      <object-id>30370</object-id>
+      <columns>cu</columns>
+      <ref-key>~.casouso.pk_casouso</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="148" parent="82" name="fk_cuaccion_accion">
+      <object-id>30365</object-id>
+      <columns>accion</columns>
+      <ref-key>~.accion.pk_accion</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="149" parent="83" name="id">
+      <state-number>12569</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;departamento_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="150" parent="83" name="nombre">
+      <state-number>12569</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="151" parent="83" name="pais">
+      <state-number>12569</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <index id="152" parent="83" name="pk_departamento">
+      <object-id>30295</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="117" parent="75" name="pk_departamento">
-      <object-id>27786</object-id>
+    <key id="153" parent="83" name="pk_departamento">
+      <object-id>30296</object-id>
       <columns>id</columns>
       <underlying-index>pk_departamento</underlying-index>
       <primary>1</primary>
     </key>
-    <foreign-key id="118" parent="75" name="fk_departamento_pais">
-      <object-id>27794</object-id>
+    <foreign-key id="154" parent="83" name="fk_departamento_pais">
+      <object-id>30375</object-id>
       <columns>pais</columns>
       <ref-key>~.pais.pk_pais</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="119" parent="76" name="id">
-      <state-number>11857</state-number>
+    <column id="155" parent="84" name="id">
+      <state-number>12570</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;direccion_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="156" parent="84" name="nombre">
+      <state-number>12570</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="157" parent="84" name="departamento">
+      <state-number>12570</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <column id="120" parent="76" name="domicilio">
-      <state-number>11857</state-number>
-      <data-type>char(100)|0</data-type>
-    </column>
-    <index id="121" parent="76" name="pk_empleado">
-      <object-id>27762</object-id>
+    <index id="158" parent="84" name="pk_direccion">
+      <object-id>30297</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="122" parent="76" name="pk_empleado">
-      <object-id>27763</object-id>
+    <key id="159" parent="84" name="pk_direccion">
+      <object-id>30298</object-id>
+      <columns>id</columns>
+      <underlying-index>pk_direccion</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="160" parent="84" name="fk_direccion_departamento">
+      <object-id>30380</object-id>
+      <columns>departamento</columns>
+      <ref-key>~.departamento.pk_departamento</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="161" parent="85" name="id">
+      <state-number>12571</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="162" parent="85" name="domicilio">
+      <state-number>12571</state-number>
+      <data-type>char(100)|0</data-type>
+    </column>
+    <column id="163" parent="85" name="nombre">
+      <state-number>12571</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="164" parent="85" name="apellido">
+      <state-number>12571</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="165" parent="85" name="telefono">
+      <state-number>12571</state-number>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <index id="166" parent="85" name="pk_empleado">
+      <object-id>30299</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="167" parent="85" name="pk_empleado">
+      <object-id>30300</object-id>
       <columns>id</columns>
       <underlying-index>pk_empleado</underlying-index>
       <primary>1</primary>
     </key>
-    <foreign-key id="123" parent="76" name="fk_empleado_usuario">
-      <object-id>27769</object-id>
+    <foreign-key id="168" parent="85" name="fk_empleado_usuario">
+      <object-id>30385</object-id>
       <columns>id</columns>
       <ref-key>~.usuario.pk_usuario</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="124" parent="77" name="id">
-      <state-number>11827</state-number>
+    <column id="169" parent="86" name="empleado">
+      <state-number>12572</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="170" parent="86" name="pedido">
+      <state-number>12572</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="171" parent="86" name="fechahora">
+      <state-number>12572</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="172" parent="86" name="comentario">
+      <state-number>12572</state-number>
+      <data-type>varchar(300)|0</data-type>
+    </column>
+    <index id="173" parent="86" name="pk_envios">
+      <object-id>30302</object-id>
+      <columns>empleado
+pedido</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="174" parent="86" name="pk_envios">
+      <object-id>30303</object-id>
+      <columns>empleado
+pedido</columns>
+      <underlying-index>pk_envios</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="175" parent="86" name="fk_envios_empleado">
+      <object-id>30390</object-id>
+      <columns>empleado</columns>
+      <ref-key>~.empleado.pk_empleado</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="176" parent="86" name="fk_envios_pedido">
+      <object-id>30395</object-id>
+      <columns>pedido</columns>
+      <ref-key>~.pedido.pk_pedido</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="177" parent="87" name="id">
+      <state-number>12573</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;imagen_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="125" parent="77" name="url">
-      <state-number>11827</state-number>
+    <column id="178" parent="87" name="url">
+      <state-number>12573</state-number>
       <mandatory>1</mandatory>
       <data-type>text|0</data-type>
     </column>
-    <column id="126" parent="77" name="producto">
-      <state-number>11827</state-number>
+    <column id="179" parent="87" name="producto">
+      <state-number>12573</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <index id="127" parent="77" name="pk_imagen">
-      <object-id>27692</object-id>
+    <index id="180" parent="87" name="pk_imagen">
+      <object-id>30304</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="128" parent="77" name="pk_imagen">
-      <object-id>27693</object-id>
+    <key id="181" parent="87" name="pk_imagen">
+      <object-id>30305</object-id>
       <columns>id</columns>
       <underlying-index>pk_imagen</underlying-index>
       <primary>1</primary>
     </key>
-    <foreign-key id="129" parent="77" name="fk_imagen_producto">
-      <object-id>27706</object-id>
+    <foreign-key id="182" parent="87" name="fk_imagen_producto">
+      <object-id>30400</object-id>
       <columns>producto</columns>
       <ref-key>~.producto.pk_producto</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="130" parent="78" name="id">
-      <state-number>11828</state-number>
+    <column id="183" parent="88" name="id">
+      <state-number>12574</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;marca_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="131" parent="78" name="descripcion">
-      <state-number>11828</state-number>
+    <column id="184" parent="88" name="descripcion">
+      <state-number>12574</state-number>
       <mandatory>1</mandatory>
       <data-type>char(30)|0</data-type>
     </column>
-    <index id="132" parent="78" name="pk_marca">
-      <object-id>27694</object-id>
+    <index id="185" parent="88" name="pk_marca">
+      <object-id>30306</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="133" parent="78" name="uq_marca_descripcion">
-      <object-id>27702</object-id>
+    <index id="186" parent="88" name="uq_marca_descripcion">
+      <object-id>30338</object-id>
       <columns>descripcion</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="134" parent="78" name="pk_marca">
-      <object-id>27695</object-id>
+    <key id="187" parent="88" name="pk_marca">
+      <object-id>30307</object-id>
       <columns>id</columns>
       <underlying-index>pk_marca</underlying-index>
       <primary>1</primary>
     </key>
-    <key id="135" parent="78" name="uq_marca_descripcion">
-      <object-id>27703</object-id>
+    <key id="188" parent="88" name="uq_marca_descripcion">
+      <object-id>30339</object-id>
       <columns>descripcion</columns>
       <underlying-index>uq_marca_descripcion</underlying-index>
     </key>
-    <column id="136" parent="79" name="id">
-      <state-number>11864</state-number>
+    <column id="189" parent="89" name="id">
+      <state-number>12575</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;metodo_envio_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="137" parent="79" name="nombre">
-      <state-number>11864</state-number>
-      <data-type>char(30)|0</data-type>
+    <column id="190" parent="89" name="descripcion">
+      <state-number>12575</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
     </column>
-    <index id="138" parent="79" name="pk_pais">
-      <object-id>27787</object-id>
+    <column id="191" parent="89" name="monto">
+      <state-number>12575</state-number>
+      <mandatory>1</mandatory>
+      <data-type>numeric(10,2)|0</data-type>
+      <default-expression>0</default-expression>
+    </column>
+    <index id="192" parent="89" name="pk_metodo_envio">
+      <object-id>30308</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="139" parent="79" name="pk_pais">
-      <object-id>27788</object-id>
+    <key id="193" parent="89" name="pk_metodo_envio">
+      <object-id>30309</object-id>
+      <columns>id</columns>
+      <underlying-index>pk_metodo_envio</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="194" parent="90" name="id">
+      <state-number>12576</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;metodo_pago_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="195" parent="90" name="descripcion">
+      <state-number>12576</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="196" parent="90" name="precio_comision">
+      <state-number>12576</state-number>
+      <mandatory>1</mandatory>
+      <data-type>numeric(10,2)|0</data-type>
+      <default-expression>0</default-expression>
+    </column>
+    <index id="197" parent="90" name="pk_metodo_pago">
+      <object-id>30310</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="198" parent="90" name="pk_metodo_pago">
+      <object-id>30311</object-id>
+      <columns>id</columns>
+      <underlying-index>pk_metodo_pago</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="199" parent="91" name="id">
+      <state-number>12577</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;modulo_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="200" parent="91" name="descripcion">
+      <state-number>12577</state-number>
+      <mandatory>1</mandatory>
+      <data-type>char(30)|0</data-type>
+    </column>
+    <index id="201" parent="91" name="pk_modulo">
+      <object-id>30312</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="202" parent="91" name="uq_modulo_descripcion">
+      <object-id>30340</object-id>
+      <columns>descripcion</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="203" parent="91" name="pk_modulo">
+      <object-id>30313</object-id>
+      <columns>id</columns>
+      <underlying-index>pk_modulo</underlying-index>
+      <primary>1</primary>
+    </key>
+    <key id="204" parent="91" name="uq_modulo_descripcion">
+      <object-id>30341</object-id>
+      <columns>descripcion</columns>
+      <underlying-index>uq_modulo_descripcion</underlying-index>
+    </key>
+    <column id="205" parent="92" name="id">
+      <state-number>12578</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;pais_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="206" parent="92" name="nombre">
+      <state-number>12578</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <index id="207" parent="92" name="pk_pais">
+      <object-id>30314</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="208" parent="92" name="pk_pais">
+      <object-id>30315</object-id>
       <columns>id</columns>
       <underlying-index>pk_pais</underlying-index>
       <primary>1</primary>
     </key>
-    <column id="140" parent="80" name="id">
-      <state-number>11829</state-number>
+    <column id="209" parent="93" name="id">
+      <state-number>12579</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
-      <default-expression>nextval(&apos;producto_id_seq&apos;::regclass)</default-expression>
+      <default-expression>nextval(&apos;pedido_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="141" parent="80" name="nombre">
-      <state-number>11829</state-number>
+    <column id="210" parent="93" name="cliente">
+      <state-number>12579</state-number>
       <mandatory>1</mandatory>
-      <data-type>varchar(200)|0</data-type>
+      <data-type>integer|0</data-type>
     </column>
-    <column id="142" parent="80" name="descripcion">
-      <state-number>11829</state-number>
+    <column id="211" parent="93" name="direccion">
+      <state-number>12579</state-number>
       <mandatory>1</mandatory>
-      <data-type>varchar(250)|0</data-type>
+      <data-type>integer|0</data-type>
     </column>
-    <column id="143" parent="80" name="precio_compra">
-      <state-number>11829</state-number>
+    <column id="212" parent="93" name="metodo_envio">
+      <state-number>12579</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="213" parent="93" name="metodo_pago">
+      <state-number>12579</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="214" parent="93" name="horafecha">
+      <state-number>12579</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="215" parent="93" name="total">
+      <state-number>12579</state-number>
       <mandatory>1</mandatory>
       <data-type>numeric(10,2)|0</data-type>
     </column>
-    <column id="144" parent="80" name="unidad_medida">
-      <state-number>11829</state-number>
+    <column id="216" parent="93" name="iva">
+      <state-number>12579</state-number>
       <mandatory>1</mandatory>
-      <data-type>integer|0</data-type>
+      <data-type>numeric(10,2)|0</data-type>
     </column>
-    <column id="145" parent="80" name="marca">
-      <state-number>11829</state-number>
-      <mandatory>1</mandatory>
-      <data-type>integer|0</data-type>
-    </column>
-    <column id="146" parent="80" name="categoria">
-      <state-number>11829</state-number>
-      <mandatory>1</mandatory>
-      <data-type>integer|0</data-type>
-    </column>
-    <index id="147" parent="80" name="pk_producto">
-      <object-id>27696</object-id>
+    <index id="217" parent="93" name="pk_pedido">
+      <object-id>30316</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="148" parent="80" name="pk_producto">
-      <object-id>27697</object-id>
+    <key id="218" parent="93" name="pk_pedido">
+      <object-id>30317</object-id>
+      <columns>id</columns>
+      <underlying-index>pk_pedido</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="219" parent="93" name="fk_pedido_direccion">
+      <object-id>30405</object-id>
+      <columns>direccion</columns>
+      <ref-key>~.direccion.pk_direccion</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="220" parent="93" name="fk_pedido_metodo_pago">
+      <object-id>30410</object-id>
+      <columns>metodo_pago</columns>
+      <ref-key>~.metodo_pago.pk_metodo_pago</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="221" parent="94" name="pedido">
+      <state-number>12580</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="222" parent="94" name="producto">
+      <state-number>12580</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="223" parent="94" name="cantidad">
+      <state-number>12580</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>0</default-expression>
+    </column>
+    <index id="224" parent="94" name="pk_pedido_producto">
+      <object-id>30318</object-id>
+      <columns>pedido
+producto</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="225" parent="94" name="pk_pedido_producto">
+      <object-id>30319</object-id>
+      <columns>pedido
+producto</columns>
+      <underlying-index>pk_pedido_producto</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="226" parent="94" name="fk_pedido_producto_pedido">
+      <object-id>30415</object-id>
+      <columns>pedido</columns>
+      <ref-key>~.pedido.pk_pedido</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="227" parent="94" name="fk_pedido_producto_producto_catalogo">
+      <object-id>30420</object-id>
+      <columns>producto</columns>
+      <ref-key>~.producto_catalogo.pk_producto_catalogo</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="228" parent="95" name="cu">
+      <state-number>12581</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="229" parent="95" name="accion">
+      <state-number>12581</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="230" parent="95" name="rol">
+      <state-number>12581</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <index id="231" parent="95" name="pk_permiso">
+      <object-id>30320</object-id>
+      <columns>cu
+accion
+rol</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="232" parent="95" name="pk_permiso">
+      <object-id>30321</object-id>
+      <columns>cu
+accion
+rol</columns>
+      <underlying-index>pk_permiso</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="233" parent="95" name="fk_permiso_cuaccion">
+      <object-id>30425</object-id>
+      <columns>cu
+accion</columns>
+      <ref-key>~.cuaccion.pk_cuaccion</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="234" parent="95" name="fk_permiso_rol">
+      <object-id>30430</object-id>
+      <columns>rol</columns>
+      <ref-key>~.rol.pk_rol</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="235" parent="96" name="id">
+      <state-number>12582</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;producto_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="236" parent="96" name="nombre">
+      <state-number>12582</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="237" parent="96" name="descripcion">
+      <state-number>12582</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="238" parent="96" name="precio_compra">
+      <state-number>12582</state-number>
+      <mandatory>1</mandatory>
+      <data-type>numeric(10,2)|0</data-type>
+    </column>
+    <column id="239" parent="96" name="unidad_medida">
+      <state-number>12582</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="240" parent="96" name="marca">
+      <state-number>12582</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="241" parent="96" name="categoria">
+      <state-number>12582</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <index id="242" parent="96" name="pk_producto">
+      <object-id>30322</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="243" parent="96" name="pk_producto">
+      <object-id>30323</object-id>
       <columns>id</columns>
       <underlying-index>pk_producto</underlying-index>
       <primary>1</primary>
     </key>
-    <foreign-key id="149" parent="80" name="fk_producto_unidad_medida">
-      <object-id>27721</object-id>
+    <foreign-key id="244" parent="96" name="fk_producto_unidad_medida">
+      <object-id>30445</object-id>
       <columns>unidad_medida</columns>
       <ref-key>~.unidad_medida.pk_unidad_medida</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="150" parent="80" name="fk_producto_marca">
-      <object-id>27716</object-id>
+    <foreign-key id="245" parent="96" name="fk_producto_marca">
+      <object-id>30440</object-id>
       <columns>marca</columns>
       <ref-key>~.marca.pk_marca</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="151" parent="80" name="fk_producto_categoria">
-      <object-id>27711</object-id>
+    <foreign-key id="246" parent="96" name="fk_producto_categoria">
+      <object-id>30435</object-id>
       <columns>categoria</columns>
       <ref-key>~.categoria.pk_categoria</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="152" parent="81" name="id">
-      <state-number>11854</state-number>
+    <column id="247" parent="97" name="id">
+      <state-number>12583</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;producto_catalogo_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="153" parent="81" name="producto">
-      <state-number>11854</state-number>
+    <column id="248" parent="97" name="producto">
+      <state-number>12583</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <column id="154" parent="81" name="catalogo">
-      <state-number>11854</state-number>
+    <column id="249" parent="97" name="catalogo">
+      <state-number>12583</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <column id="155" parent="81" name="precio">
-      <state-number>11854</state-number>
+    <column id="250" parent="97" name="precio">
+      <state-number>12583</state-number>
       <mandatory>1</mandatory>
       <data-type>numeric(10,2)|0</data-type>
     </column>
-    <column id="156" parent="81" name="stock">
-      <state-number>11854</state-number>
+    <column id="251" parent="97" name="stock">
+      <state-number>12583</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="157" parent="81" name="show">
-      <state-number>11854</state-number>
+    <column id="252" parent="97" name="show">
+      <state-number>12583</state-number>
       <data-type>boolean|0</data-type>
     </column>
-    <index id="158" parent="81" name="pk_producto_catalogo">
-      <object-id>27740</object-id>
+    <index id="253" parent="97" name="pk_producto_catalogo">
+      <object-id>30324</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="159" parent="81" name="pk_producto_catalogo">
-      <object-id>27741</object-id>
+    <key id="254" parent="97" name="pk_producto_catalogo">
+      <object-id>30325</object-id>
       <columns>id</columns>
       <underlying-index>pk_producto_catalogo</underlying-index>
       <primary>1</primary>
     </key>
-    <foreign-key id="160" parent="81" name="fk_producto_catalogo_producto">
-      <object-id>27747</object-id>
+    <foreign-key id="255" parent="97" name="fk_producto_catalogo_producto">
+      <object-id>30455</object-id>
       <columns>producto</columns>
       <ref-key>~.producto.pk_producto</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="161" parent="81" name="fk_producto_catalogo_catalogo">
-      <object-id>27742</object-id>
+    <foreign-key id="256" parent="97" name="fk_producto_catalogo_catalogo">
+      <object-id>30450</object-id>
       <columns>catalogo</columns>
       <ref-key>~.catalogo.pk_catalogo</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="162" parent="82" name="id">
-      <state-number>11815</state-number>
+    <column id="257" parent="98" name="id">
+      <state-number>12584</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;rol_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="163" parent="82" name="nombre">
-      <state-number>11815</state-number>
+    <column id="258" parent="98" name="nombre">
+      <state-number>12584</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(100)|0</data-type>
     </column>
-    <index id="164" parent="82" name="pk_rol">
-      <object-id>27649</object-id>
+    <index id="259" parent="98" name="pk_rol">
+      <object-id>30326</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="165" parent="82" name="uq_rol_nombre">
-      <object-id>27647</object-id>
+    <index id="260" parent="98" name="uq_rol_nombre">
+      <object-id>30342</object-id>
       <columns>nombre</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="166" parent="82" name="pk_rol">
-      <object-id>27650</object-id>
+    <key id="261" parent="98" name="pk_rol">
+      <object-id>30327</object-id>
       <columns>id</columns>
       <underlying-index>pk_rol</underlying-index>
       <primary>1</primary>
     </key>
-    <key id="167" parent="82" name="uq_rol_nombre">
-      <object-id>27648</object-id>
+    <key id="262" parent="98" name="uq_rol_nombre">
+      <object-id>30343</object-id>
       <columns>nombre</columns>
       <underlying-index>uq_rol_nombre</underlying-index>
     </key>
-    <column id="168" parent="83" name="id">
-      <state-number>11830</state-number>
+    <column id="263" parent="99" name="id">
+      <state-number>12585</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;unidad_medida_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="169" parent="83" name="abreviatura">
-      <state-number>11830</state-number>
+    <column id="264" parent="99" name="abreviatura">
+      <state-number>12585</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(10)|0</data-type>
     </column>
-    <column id="170" parent="83" name="descripcion">
-      <state-number>11830</state-number>
+    <column id="265" parent="99" name="descripcion">
+      <state-number>12585</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(100)|0</data-type>
     </column>
-    <index id="171" parent="83" name="pk_unidad_medida">
-      <object-id>27698</object-id>
+    <index id="266" parent="99" name="pk_unidad_medida">
+      <object-id>30328</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="172" parent="83" name="uq_unidad_medida_abreviatura">
-      <object-id>27704</object-id>
+    <index id="267" parent="99" name="uq_unidad_medida_abreviatura">
+      <object-id>30344</object-id>
       <columns>abreviatura</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="173" parent="83" name="pk_unidad_medida">
-      <object-id>27699</object-id>
+    <key id="268" parent="99" name="pk_unidad_medida">
+      <object-id>30329</object-id>
       <columns>id</columns>
       <underlying-index>pk_unidad_medida</underlying-index>
       <primary>1</primary>
     </key>
-    <key id="174" parent="83" name="uq_unidad_medida_abreviatura">
-      <object-id>27705</object-id>
+    <key id="269" parent="99" name="uq_unidad_medida_abreviatura">
+      <object-id>30345</object-id>
       <columns>abreviatura</columns>
       <underlying-index>uq_unidad_medida_abreviatura</underlying-index>
     </key>
-    <column id="175" parent="84" name="id">
-      <state-number>11811</state-number>
+    <column id="270" parent="100" name="id">
+      <state-number>12586</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;usuario_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="176" parent="84" name="nombre_usuario">
-      <state-number>11811</state-number>
+    <column id="271" parent="100" name="nombre_usuario">
+      <state-number>12586</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(100)|0</data-type>
     </column>
-    <column id="177" parent="84" name="password">
-      <state-number>11811</state-number>
+    <column id="272" parent="100" name="password">
+      <state-number>12586</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="178" parent="84" name="tipo">
-      <state-number>11811</state-number>
+    <column id="273" parent="100" name="tipo">
+      <state-number>12586</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <column id="179" parent="84" name="email">
-      <state-number>11811</state-number>
+    <column id="274" parent="100" name="email">
+      <state-number>12586</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(250)|0</data-type>
     </column>
-    <column id="180" parent="84" name="id_rol">
-      <state-number>11811</state-number>
-      <mandatory>1</mandatory>
+    <column id="275" parent="100" name="id_rol">
+      <state-number>12586</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <index id="181" parent="84" name="pk_usuario">
-      <object-id>27639</object-id>
+    <index id="276" parent="100" name="pk_usuario">
+      <object-id>30330</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="182" parent="84" name="uq_usuario_nombre_usuario">
-      <object-id>27637</object-id>
+    <index id="277" parent="100" name="uq_usuario_nombre_usuario">
+      <object-id>30348</object-id>
       <columns>nombre_usuario</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="183" parent="84" name="uq_usuario_email">
-      <object-id>27635</object-id>
+    <index id="278" parent="100" name="uq_usuario_email">
+      <object-id>30346</object-id>
       <columns>email</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="184" parent="84" name="pk_usuario">
-      <object-id>27640</object-id>
+    <key id="279" parent="100" name="pk_usuario">
+      <object-id>30331</object-id>
       <columns>id</columns>
       <underlying-index>pk_usuario</underlying-index>
       <primary>1</primary>
     </key>
-    <key id="185" parent="84" name="uq_usuario_nombre_usuario">
-      <object-id>27638</object-id>
+    <key id="280" parent="100" name="uq_usuario_nombre_usuario">
+      <object-id>30349</object-id>
       <columns>nombre_usuario</columns>
       <underlying-index>uq_usuario_nombre_usuario</underlying-index>
     </key>
-    <key id="186" parent="84" name="uq_usuario_email">
-      <object-id>27636</object-id>
+    <key id="281" parent="100" name="uq_usuario_email">
+      <object-id>30347</object-id>
       <columns>email</columns>
       <underlying-index>uq_usuario_email</underlying-index>
     </key>
-    <foreign-key id="187" parent="84" name="fk_usuario_rol">
-      <object-id>27651</object-id>
+    <foreign-key id="282" parent="100" name="fk_usuario_rol">
+      <object-id>30460</object-id>
       <columns>id_rol</columns>
       <ref-key>~.rol.pk_rol</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
