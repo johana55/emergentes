@@ -27,7 +27,6 @@ CREATE TABLE cliente (
 	id integer  NOT NULL,
 	nombres varchar(100),
 	apellidos varchar(50) NOT NULL,
-	correo varchar(100) NOT NULL,
 	direccion integer NOT NULL,
 	telefono varchar(20),
 	nit varchar(20),
