@@ -10,6 +10,13 @@ class PedidoController extends Controller
         $this->view->show('pedido/inicio',[]);
     }
 
+    public function indexClienteAction()
+    {
+        $pedidos = Pedido::misPedidos();
+        $p = Pedido::obtenerPedido();
+        $this->view->show('pedido/inicio_cliente',['pedidos' => $pedidos,'id'=> $p->id]);
+    }
+
     public function addProductAction()
     {
         if(!empty($_POST))
@@ -94,6 +101,14 @@ class PedidoController extends Controller
         $pedido = Pedido::obtenerPedido();
         $pedido->guardar();
 
-        header('Location: index.php?controller=Pedido&action=index');
+        header('Location: index.php?controller=Pedido&action=indexCliente');
+    }
+
+    public function estadoAction()
+    {
+        if (!empty($_POST['id']))
+        {
+            
+        }
     }
 }

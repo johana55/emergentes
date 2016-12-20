@@ -67,7 +67,7 @@
                     <li class="col-sm-3" style="background-color: #120bdd;"><a href="<?= $config->get('urlBase').'?controller=Site&action=index'?>" style="color: white;">INICIO</a></li>
                     <li class="col-sm-3" style="background-color: #fb601d;"><a href="<?= $config->get('urlBase').'?controller=Site&action=index#productos'?>" style="color: white">PRODUCTOS</a></li>
                     <li class="col-sm-3" style="background-color: #f2c739;"><a href="<?= $config->get('urlBase').'?controller=Site&action=index#about'?>" style="color: white">ACERCA DE</a></li>
-                    <li class="col-sm-3" style="background-color: #48c61f;"><a href="<?= $config->get('urlBase').'?controller=Site&action=index#contact'?>" style="color: white">CONTACTO</a></li>
+                    <li class="col-sm-3" style="background-color: #48c61f;"><a href="<?= $config->get('urlBase').'?controller=Pedido&action=indexCliente'?>" style="color: white">MIS PEDIDOS</a></li>
 
                     <!-- <li class="dropdown">
                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTOS<span class="caret"></span></a>

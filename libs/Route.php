@@ -196,7 +196,7 @@ if( $auth->isGuest() )
 
                 case 'PedidoController':
                     // registrar acciones
-                    $acciones = ['indexAction','addProductAction','editarAction','finalizarAction','guardarAction'];
+                    $acciones = ['indexClienteAction','estadoAction','addProductAction','editarAction','finalizarAction','guardarAction'];
                     if(!in_array($actionName,$acciones))
                     {
                         // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada

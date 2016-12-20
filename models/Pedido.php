@@ -57,6 +57,22 @@ class Pedido extends Model
         return $pedido;
     }
 
+    public static function misPedidos()
+    {
+        $user= User::singleton();
+        $db = SPDO::singleton();
+
+
+        $sql = 'select  p.*';
+        $sql .= ' from pedido p, cliente c, usuario u ';
+        $sql .= ' WHERE  u.tipo=0 and u.id=c.id and p.cliente= c.id and u.id=? ';
+        $params = [$user->getID()];
+        $query = $db->prepare($sql);
+        $query->execute($params);
+        $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Pedido');
+        return $query->fetchAll();
+    }
+
     public function addProducto($id_producto, $cantidad)
     {
         $sql = ' select count(*) as cantidad ';
@@ -164,8 +180,30 @@ class Pedido extends Model
     public function guardar()
     {
         $sql ='UPDATE pedido set estado = ? where id =?';
-        $params = [1 ,$this->id];
+        $params = [2 ,$this->id];
         $query = $this->db->prepare($sql);
         $query->execute($params);
+    }
+
+    public function estado()
+    {
+        $valor = 'Sin Estado';
+        switch ($this->estado)
+        {
+            case 1:
+                $valor='Solicitado';
+                break;
+            case 2:
+                $valor='Pagado';
+                break;
+            case 3:
+                $valor='Enviado';
+                break;
+
+            default :
+                $valor = 'Nuevo';
+                break;
+        }
+        return $valor;
     }
 }
