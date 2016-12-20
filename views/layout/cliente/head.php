@@ -8,6 +8,7 @@
     <link rel="icon" href="assets/img/regalo.png" type="image/x-icon" />
 
 
+
     <title><?= $config->get('aplication_name') ?></title>
     <link rel="stylesheet" href="assets/css/w3.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -23,14 +24,8 @@
 </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px;">
 <div id="inicio">
-    <div class="container">
 
-    </div>
-   <div class="container-fluid">
-       <header>
 
-       </header>
-   </div>
 
     <nav class="navbar navbar-default navbar-fixed-top" style="background: transparent;border-style: none" >
         <div class="container-fluid">
@@ -41,18 +36,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <?php $cliente = User::singleton();
+                if(!$cliente->isGuest()){?>
+                    <div class="varbar-brand">
+                        <ul class="nav nav-pills">
+                            <li role="presentation" ><a href="<?= $config->get('urlBase').'?controller=Pedido&action=finalizar&id='.$id?>" style="margin: 0px"> <i style="padding: 0px; margin: 0px" class=" fa fa-shopping-cart fa-6" aria-hidden="true"></i> Finalizar Compra</a></li>
+                        </ul>
+                    </div>
+                <?php }else{?>
 
-                <div class="varbar-brand">
-                    <ul class="nav nav-pills">
-                        <li role="presentation" ><a href="#" style="margin: 0px"> <i style="padding: 0px; margin: 0px" class=" fa fa-shopping-cart fa-6" aria-hidden="true"></i> Finalizar Compra</a></li>
-                    </ul>
 
-                </div>
+                <?php } ?>
+
+
             </div>
             <div id="navbar" class="navbar-collapse collapse" >
                 <div>
                     <?php
-                    $cliente = User::singleton();
+
                     if($cliente->isGuest()){?>
                         <button class="w3-right btn btn-link btn-lg" onclick="document.getElementById('id01').style.display='block'" style="padding: 5px" href="" >Mi Cuenta</button>
                     <?php }else
@@ -64,7 +65,7 @@
 
                 </div>
                 <ul class="nav navbar-nav" style="width: 100%;background: transparent;font-size: large;font-weight: bold;">
-                    <li class="col-sm-3" style="background-color: #120bdd;"><a href="#inicio" style="color: white;">INICIO</a></li>
+                    <li class="col-sm-3" style="background-color: #120bdd;"><a <?= !empty($productoc) ? 'href="'.$config->get('urlBase').'?controller=Site&action=index'.'"' : 'href="#inicio"' ?> style="color: white;">INICIO</a></li>
                     <li class="col-sm-3" style="background-color: #fb601d;"><a href="#productos" style="color: white">PRODUCTOS</a></li>
                     <li class="col-sm-3" style="background-color: #f2c739;"><a href="#about" style="color: white">ACERCA DE</a></li>
                     <li class="col-sm-3" style="background-color: #48c61f;"><a href="#contact" style="color: white">CONTACTO</a></li>
@@ -79,10 +80,12 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">
-                            <img style="width:80px"src="assets/img/bolsa-compra.png" alt="compra-carrito">
+                        <?php if(!$cliente->isGuest()){?>
+                            <a href="<?= $config->get('urlBase').'?controller=Pedido&action=editar' ?>">
+                                <img style="width:80px"src="assets/img/bolsa-compra.png" alt="compra-carrito">
 
-                        </a>
+                            </a>
+                        <?php }?>
                     </li>
                 </ul>
             </div><!--/.nav-collapse -->

@@ -1,5 +1,6 @@
 <?php
 
+require 'models/Producto.php';
 class ProductoC extends Model
 {
     public $id;
@@ -10,6 +11,18 @@ class ProductoC extends Model
     public $producto;
 
     const table='producto_catalogo';
+
+    public static function find($id_producto,$id_catalogo)
+    {
+        $db = SPDO::singleton();
+        $sql = 'SELECT * FROM '.self::table;
+        $sql.=' where catalogo=? and producto=?';
+        $params = [$id_catalogo,$id_producto];
+        $query = $db->prepare($sql);
+        $query->execute($params);
+        $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'ProductoC');
+        return $query->fetch();
+    }
 
     public function listar()
     {
@@ -23,10 +36,10 @@ class ProductoC extends Model
 
     public function producto()
     {
-        $sql = 'SELECT p.*';
-        $sql .= ' FROM producto p, producto_catalogo pc';
-        $sql .= ' WHERE  pc.producto = p.id and pc.catalogo = ? and pc.producto=? ';
-        $params = [$this->catalogo,$this->producto];
+        $sql = ' SELECT *';
+        $sql .= ' FROM producto ';
+        $sql .= ' WHERE  id = ? ';
+        $params = [$this->producto];
         $query = $this->db->prepare($sql);
         $query->execute($params);
         $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Producto');
@@ -98,7 +111,7 @@ WHERE p.marca=ma.id AND p.unidad_medida=um.id AND p.categoria=ca.id AND p.id Not
     {
         $sql  ='SELECT pc.* ';
         $sql .=' FROM  catalogo c,producto_catalogo pc ';
-        $sql .= ' where  c.show=1 and pc.catalogo=c.id and pc.show=TRUE';
+        $sql .= ' where  c.show=1 and pc.catalogo=c.id and pc.show=TRUE and pc.stock > 0';
         $query = $this->db->prepare($sql);
         $query->execute();
         $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'ProductoC');

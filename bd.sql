@@ -30,8 +30,7 @@ CREATE TABLE cliente (
 	correo varchar(100) NOT NULL,
 	direccion integer NOT NULL,
 	telefono varchar(20),
-	nit varchar(20),
-	localidad varchar(200) NOT NULL
+	nit varchar(20)
 );
 
 CREATE TABLE cuaccion (
@@ -47,7 +46,8 @@ CREATE TABLE departamento (
 
 CREATE TABLE direccion (
 	id serial NOT NULL,
-	nombre varchar(100) NOT NULL,
+	direccion varchar(100) NOT NULL,
+	localidad varchar(200) NOT NULL,
 	departamento integer NOT NULL
 );
 
@@ -88,7 +88,6 @@ CREATE TABLE metodo_envio (
 CREATE TABLE metodo_pago (
 	id serial NOT NULL,
 	descripcion varchar(100) NOT NULL,
-	precio_comision decimal(10,2) DEFAULT 0 NOT NULL
 );
 
 CREATE TABLE modulo (
@@ -111,7 +110,8 @@ CREATE TABLE pedido (
 	metodo_pago integer NOT NULL,
 	horafecha timestamp NOT NULL,
 	total decimal(10,2) NOT NULL,
-	iva decimal(10,2) NOT NULL
+	iva decimal(10,2) NOT NULL,
+	estado INTEGER DEFAULT 0 not null
 );
 
 CREATE TABLE pedido_producto (

@@ -5,7 +5,8 @@ include 'views/layout/cliente/head.php';
         <div class="container" id="productos">
             <h2>Ultimo Productos</h2>
             <div class="row" style="margin: auto 5% ">
-               <?php foreach ($productos as $producto){
+               <?php
+                    foreach ($productos as $producto){
                    $imagenes = $producto->producto()->imagenes();
 
                    if(!empty($imagenes)){
@@ -22,10 +23,13 @@ include 'views/layout/cliente/head.php';
                    <div class="col-xs-12 col-sm-6 col-md-3" >
 
                        <img src="<?= $urlImagen ?>" class="img-rounded img-responsive" alt="<?=$p->nombre ?>"   onclick="onClick(this)" style="margin-bottom: 10px">
-                       <a href="<?= $config->get('urlBase').'?controller=Site&action=detail&id='.$producto->id ?>"><h3><?=$p->nombre ?> </h3></a>
+                       <a href="<?= $config->get('urlBase').'?controller=Producto&action=detail&id='.$producto->id.'&catalogo='.$catalogo ?>"><h3><?=$p->nombre ?> </h3></a>
                        <p><?=$p->descripcion ?> </p>
                        <h4>Precio: <?=$producto->precio ?> </h4>
-                       <button type="button" class="btn btn-info btn-block" onclick="anadirProducto(<?=$producto->id ?>)">Añadir al Carrito</button>
+                       <?php if(!$cliente->isGuest()){?>
+                           <button type="button" class="btn btn-info btn-block" onclick="anadirProducto(<?=$producto->id ?>)">Añadir al Carrito</button>
+                       <?php }?>
+
                    </div>
                <?php } ?>
 
@@ -62,7 +66,23 @@ include 'views/layout/cliente/head.php';
         }
 
         function anadirProducto(id) {
-            alert(id);
+            $.ajax(
+                {
+                    url : '<?= $config->get('urlBase').'?controller=Pedido&action=addProduct'?>',
+                    type: "POST",
+                    data : {id_producto: id}
+                })
+                .done(function(data) {
+                    //location.reload(true);
+                    alert("Producto Agregado al carrito");
+                });
+            /*
+             .fail(function(data) {
+             alert( "error" );
+             })
+             .always(function(data) {
+             alert( "complete" );
+             })*/ ;
         }
     </script>
 <?php

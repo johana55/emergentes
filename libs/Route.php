@@ -9,7 +9,7 @@ if( $auth->isGuest() )
     {
         case 'SiteController':
             // registrar acciones
-            $acciones = ['indexAction','loginAction','detailAction','registrarAction',''];
+            $acciones = ['indexAction','loginAction','registrarAction',''];
             if(!in_array($actionName,$acciones))
             {
                 // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
@@ -21,6 +21,26 @@ if( $auth->isGuest() )
         case 'ClienteController':
             // registrar acciones
             $acciones = ['registrarAction','createAction'];
+            if(!in_array($actionName,$acciones))
+            {
+                // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
+                $controllerName = '';
+                $actionName = '';
+            }
+            break;
+        case 'PedidoController':
+            // registrar acciones
+            $acciones = ['indexAction'];
+            if(!in_array($actionName,$acciones))
+            {
+                // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
+                $controllerName = '';
+                $actionName = '';
+            }
+            break;
+        case 'ProductoController':
+
+            $acciones = ['detailAction'];
             if(!in_array($actionName,$acciones))
             {
                 // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
@@ -174,6 +194,26 @@ if( $auth->isGuest() )
                     }
                     break;
 
+                case 'PedidoController':
+                    // registrar acciones
+                    $acciones = ['indexAction','addProductAction','editarAction','finalizarAction','guardarAction'];
+                    if(!in_array($actionName,$acciones))
+                    {
+                        // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
+                        $controllerName = '';
+                        $actionName = '';
+                    }
+                    break;
+                case 'ProductoController':
+
+                    $acciones = ['detailAction'];
+                    if(!in_array($actionName,$acciones))
+                    {
+                        // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
+                        $controllerName = '';
+                        $actionName = '';
+                    }
+                    break;
                 default :
                     // no tiene acceso poner rutas donde mostrar error en este caso yo lo pongo q muestre ruta no encontrada
                     $controllerName = '';

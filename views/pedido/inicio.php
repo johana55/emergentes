@@ -1,11 +1,11 @@
 <?php
-include 'views/layout/admin/head.php';
+include 'views/layout/cliente/clienteHead.php';
 ?>
 
-<h1> pedido inicio</h1>
+
 
 <?php
-include 'views/layout/admin/foot.php';
+include 'views/layout/cliente/clienteFoot.php';
 ?>
 
 

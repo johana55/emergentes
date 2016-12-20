@@ -1,16 +1,27 @@
 <?php
 
-require 'models/Cliente.php';
 require 'models/Catalogo.php';
-require 'models/Producto.php';
-require 'models/ProductoC.php';
+require 'models/Pedido.php';
 class SiteController extends Controller
 {
     public function indexAction()
     {
         $productos = new ProductoC();
         $productos = $productos->catalogoActivo();
-        $parametros = ['productos'=> $productos,];
+        $catalogo = null;
+        if(!empty($productos))
+        {
+            $catalogo=$productos[0]->catalogo;
+        }
+        $user=User::singleton();
+        $id=0;
+        if(!$user->isGuest())
+        {
+            $pedido = Pedido::obtenerPedido();
+            $id=$pedido->id;
+        }
+
+        $parametros = ['productos'=> $productos,'catalogo'=>$catalogo,'id'=>$id];
 
         $this->view->show('site/inicio', $parametros);
     }
@@ -38,11 +49,7 @@ class SiteController extends Controller
         header('Location: index.php?controller=Site&action=index');
     }
 
-    public function detailAction()
-    {
-        echo $_GET['id'];
-        $this->view->show('site/detail');
-    }
+
     public function registrarAction()
     {
         if(!empty($_POST))

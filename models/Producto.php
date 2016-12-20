@@ -15,6 +15,18 @@ class Producto extends Model
 
     const table='producto';
 
+    public static function find($id_producto)
+    {
+        $db = SPDO::singleton();
+        $sql = 'SELECT * FROM '.self::table;
+        $sql.=' where id= ?';
+        $params = [$id_producto];
+        $query = $db->prepare($sql);
+        $query->execute($params);
+        $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Producto');
+        return $query->fetch();
+    }
+
 
     public function listar()
     {
@@ -113,6 +125,4 @@ class Producto extends Model
             return false;
         }
     }
-
-
 }

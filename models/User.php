@@ -112,4 +112,10 @@ class User  extends Model
         unset($_SESSION['id']);
     }
 
+
+    public function getID()
+    {
+        return $this->id;
+    }
+
 }

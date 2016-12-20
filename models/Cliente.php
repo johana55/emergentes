@@ -1,13 +1,29 @@
 <?php
 
 require 'models/Usuario.php';
+require 'models/Direccion.php';
 class Cliente extends Model
 {
     public $id;
-    public $fechacreado;
-    public $prospecto;
+    public $nombres;
+    public $apellidos;
+    public $direccion;
+    public $telefono;
+    public $nit;
 
     const table='cliente';
+
+
+    public static function find($id)
+    {
+        $db = SPDO::singleton();
+        $sql = 'SELECT * FROM '.self::table.' where id=?';
+        $query = $db->prepare($sql);
+        $params = [$id];
+        $query->execute($params);
+        $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Cliente');
+        return $query->fetch();
+    }
     public function listar()
     {
         $sql = 'SELECT * FROM '.self::table;
@@ -40,4 +56,15 @@ class Cliente extends Model
 
     }
 
+
+    public function direccion()
+    {
+        $sql = 'SELECT * FROM '.'direccion ';
+        $sql .= ' where id = ?';
+        $params = [$this->direccion];
+        $query = $this->db->prepare($sql);
+        $query->execute($params);
+        $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Direccion');
+        return $query->fetch();
+    }
 }

@@ -1,6 +1,5 @@
 <?php
-require 'models/Producto.php';
-
+require 'models/ProductoC.php';
 
 class ProductoController extends Controller
 {
@@ -184,5 +183,13 @@ class ProductoController extends Controller
 
     }
 
+    public function detailAction()
+    {
+        if(!empty($_GET['id']) and !empty($_GET['catalogo']))
+        {
+            $productoc = ProductoC::find($_GET['id'],$_GET['catalogo']);
+            $this->view->show('producto/detail',['productoc' => $productoc]);
+        }
 
+    }
 }
