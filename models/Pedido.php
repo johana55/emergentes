@@ -32,6 +32,11 @@ class Pedido extends Model
         $query->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Pedido');
         $pedido = $query->fetch();
 
+        echo 'hola';
+        echo '<pre>';
+        print_r($pedido);
+        echo '</pre>';
+
         if(empty($pedido))
         {
             $cliente = Cliente::find($user->getID());

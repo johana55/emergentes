@@ -18,6 +18,8 @@ class SiteController extends Controller
         if(!$user->isGuest())
         {
             $pedido = Pedido::obtenerPedido();
+
+
             $id=$pedido->id;
         }
 
