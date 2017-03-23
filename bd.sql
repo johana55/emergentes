@@ -1,5 +1,4 @@
-username  jz89@hotmail.com
-pass	  ivoncita1connerkent1
+
 
 CREATE TABLE accion (
 	id serial NOT NULL,
